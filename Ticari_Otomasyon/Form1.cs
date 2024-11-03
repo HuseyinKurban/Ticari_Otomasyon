@@ -16,5 +16,13 @@ namespace Ticari_Otomasyon
         {
             InitializeComponent();
         }
+        FrmUrunler fr;
+        private void BtnUrunler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            fr = new FrmUrunler();
+            //bu urunler formunu ana formdaki parentte ekleyip aç
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
