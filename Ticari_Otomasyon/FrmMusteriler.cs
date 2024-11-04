@@ -92,7 +92,7 @@ namespace Ticari_Otomasyon
             komut.Parameters.AddWithValue("@p10", TxtVergi.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
-            MessageBox.Show("Müşteri Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Müşteri Bilgileri Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             listele();
             textTemizle();
         }
@@ -127,7 +127,7 @@ namespace Ticari_Otomasyon
                 komut.Parameters.AddWithValue("@p1", Txtid.Text);
                 komut.ExecuteNonQuery();
                 bgl.baglanti().Close();
-                MessageBox.Show("Müşteri Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Müşteri Bilgileri Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 listele();
                 textTemizle();
             }
@@ -135,6 +135,27 @@ namespace Ticari_Otomasyon
 
         private void BtnTextTemizle_Click(object sender, EventArgs e)
         {
+            textTemizle();
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update TBL_MUSTERILER  set AD=@P1,SOYAD=@P2,TELEFON=@P3,TELEFON2=@P4,TC=@P5,MAIL=@P6,IL=@P7,ILCE=@P8,ADRES=@P9,VERGIDAIRE=@P10 WHERE ID=@P11", bgl.baglanti());
+            komut.Parameters.AddWithValue("@P1", TxtAd.Text);
+            komut.Parameters.AddWithValue("@P2", TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@P3", MskTxtTelefon1.Text);
+            komut.Parameters.AddWithValue("@P4", MskTxtTelefon2.Text);
+            komut.Parameters.AddWithValue("@P5", MskTxtTC.Text);
+            komut.Parameters.AddWithValue("@P6", TxtMail.Text);
+            komut.Parameters.AddWithValue("@P7", Cmbil.Text);
+            komut.Parameters.AddWithValue("@P8", Cmbilce.Text);
+            komut.Parameters.AddWithValue("@P9", RchTxtAdres.Text);
+            komut.Parameters.AddWithValue("@P10", TxtVergi.Text);
+            komut.Parameters.AddWithValue("@P11", Txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Müşteri Bilgileri Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            listele();
             textTemizle();
         }
     }

@@ -81,6 +81,7 @@
             this.BtnGuncelle.Size = new System.Drawing.Size(168, 31);
             this.BtnGuncelle.TabIndex = 20;
             this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnSil
             // 

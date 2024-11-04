@@ -57,7 +57,7 @@ namespace Ticari_Otomasyon
             komut.Parameters.AddWithValue("@p8", RchTxtDetay.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
-            MessageBox.Show("Ürün Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Ürün Bilgileri Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             listele();
             textTemizle();
         }
@@ -73,7 +73,7 @@ namespace Ticari_Otomasyon
                 komut.Parameters.AddWithValue("@p1", Txtid.Text);
                 komut.ExecuteNonQuery();
                 bgl.baglanti().Close();
-                MessageBox.Show("Ürün Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ürün Bilgileri Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 listele();
                 textTemizle();
             }
@@ -117,7 +117,7 @@ namespace Ticari_Otomasyon
                 komut.Parameters.AddWithValue("@P9", Txtid.Text);
                 komut.ExecuteNonQuery();
                 bgl.baglanti().Close();
-                MessageBox.Show("Ürün Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ürün Bilgileri Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 listele();
                 textTemizle();
 
