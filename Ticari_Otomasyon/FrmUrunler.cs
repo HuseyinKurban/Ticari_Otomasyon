@@ -123,5 +123,10 @@ namespace Ticari_Otomasyon
 
             }
         }
+
+        private void BtnTextTemizle_Click(object sender, EventArgs e)
+        {
+            textTemizle();
+        }
     }
 }

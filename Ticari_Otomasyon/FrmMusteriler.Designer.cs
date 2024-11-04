@@ -57,6 +57,7 @@
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.BtnTextTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).BeginInit();
@@ -91,6 +92,7 @@
             this.BtnSil.Size = new System.Drawing.Size(168, 31);
             this.BtnSil.TabIndex = 19;
             this.BtnSil.Text = "SİL";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnKaydet
             // 
@@ -102,6 +104,7 @@
             this.BtnKaydet.Size = new System.Drawing.Size(168, 31);
             this.BtnKaydet.TabIndex = 18;
             this.BtnKaydet.Text = "KAYDET";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // RchTxtAdres
             // 
@@ -250,6 +253,7 @@
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.BtnTextTemizle);
             this.groupControl1.Controls.Add(this.Cmbilce);
             this.groupControl1.Controls.Add(this.Cmbil);
             this.groupControl1.Controls.Add(this.TxtVergi);
@@ -278,7 +282,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupControl1.Location = new System.Drawing.Point(741, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(283, 627);
+            this.groupControl1.Size = new System.Drawing.Size(283, 689);
             this.groupControl1.TabIndex = 3;
             // 
             // Cmbilce
@@ -302,6 +306,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbil.Size = new System.Drawing.Size(169, 24);
             this.Cmbil.TabIndex = 26;
+            this.Cmbil.SelectedIndexChanged += new System.EventHandler(this.Cmbil_SelectedIndexChanged);
             // 
             // TxtVergi
             // 
@@ -356,6 +361,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // gridControl1
             // 
@@ -363,21 +369,34 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1024, 627);
+            this.gridControl1.Size = new System.Drawing.Size(741, 689);
             this.gridControl1.TabIndex = 2;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            // 
+            // BtnTextTemizle
+            // 
+            this.BtnTextTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnTextTemizle.Appearance.Options.UseFont = true;
+            this.BtnTextTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnTextTemizle.Location = new System.Drawing.Point(103, 621);
+            this.BtnTextTemizle.Name = "BtnTextTemizle";
+            this.BtnTextTemizle.Size = new System.Drawing.Size(168, 31);
+            this.BtnTextTemizle.TabIndex = 28;
+            this.BtnTextTemizle.Text = "TEMİZLE";
+            this.BtnTextTemizle.Click += new System.EventHandler(this.BtnTextTemizle_Click);
             // 
             // FrmMusteriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 627);
-            this.Controls.Add(this.groupControl1);
+            this.ClientSize = new System.Drawing.Size(1024, 689);
             this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.groupControl1);
             this.Name = "FrmMusteriler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteriler";
+            this.Load += new System.EventHandler(this.FrmMusteriler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
@@ -424,5 +443,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.ComboBoxEdit Cmbilce;
         private DevExpress.XtraEditors.ComboBoxEdit Cmbil;
+        private DevExpress.XtraEditors.SimpleButton BtnTextTemizle;
     }
 }
