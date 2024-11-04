@@ -1,6 +1,6 @@
 ﻿namespace Ticari_Otomasyon
 {
-    partial class Form1
+    partial class FrmAnaModul
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaModul));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.BtnUrunler = new DevExpress.XtraBars.BarButtonItem();
             this.BtnStoklar = new DevExpress.XtraBars.BarButtonItem();
@@ -109,6 +109,7 @@
             this.BtnMusteriler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnMusteriler.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnMusteriler.Name = "BtnMusteriler";
+            this.BtnMusteriler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMusteriler_ItemClick);
             // 
             // BtnFirmalar
             // 
@@ -246,15 +247,15 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // Form1
+            // FrmAnaModul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 741);
+            this.ClientSize = new System.Drawing.Size(1034, 811);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
-            this.MinimumSize = new System.Drawing.Size(1050, 780);
-            this.Name = "Form1";
+            this.MinimumSize = new System.Drawing.Size(1050, 850);
+            this.Name = "FrmAnaModul";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TİCARİ OTOMASYON";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
