@@ -34,7 +34,7 @@ namespace Ticari_Otomasyon
         private void BtnMusteriler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
            
-            if (frmusteri == null)//fr nesnesi tanımlanmamıssa yeniden açsın  yani ard arda açmasın
+            if (frmusteri == null)
             {
                 frmusteri = new FrmMusteriler();
                 frmusteri.MdiParent = this;

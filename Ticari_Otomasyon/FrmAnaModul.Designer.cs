@@ -80,7 +80,7 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1034, 150);
+            this.ribbonControl1.Size = new System.Drawing.Size(1902, 150);
             // 
             // BtnUrunler
             // 
@@ -251,13 +251,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 811);
+            this.ClientSize = new System.Drawing.Size(1902, 999);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
-            this.MinimumSize = new System.Drawing.Size(1050, 850);
+            this.MinimumSize = new System.Drawing.Size(1918, 1038);
             this.Name = "FrmAnaModul";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TİCARİ OTOMASYON";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);

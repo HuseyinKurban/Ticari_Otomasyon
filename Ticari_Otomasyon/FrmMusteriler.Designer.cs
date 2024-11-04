@@ -376,6 +376,7 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmMusteriler";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteriler";
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
