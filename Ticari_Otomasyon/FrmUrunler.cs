@@ -42,6 +42,7 @@ namespace Ticari_Otomasyon
         private void FrmUrunler_Load(object sender, EventArgs e)
         {
             listele();
+            textTemizle();
         }
 
         private void BtnKaydet_Click(object sender, EventArgs e)

@@ -136,6 +136,7 @@
             this.BtnTextTemizle.Size = new System.Drawing.Size(142, 31);
             this.BtnTextTemizle.TabIndex = 28;
             this.BtnTextTemizle.Text = "TEMİZLE";
+            this.BtnTextTemizle.Click += new System.EventHandler(this.BtnTextTemizle_Click);
             // 
             // Cmbilce
             // 
@@ -158,6 +159,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Cmbil.Size = new System.Drawing.Size(164, 24);
             this.Cmbil.TabIndex = 26;
+            this.Cmbil.SelectedIndexChanged += new System.EventHandler(this.Cmbil_SelectedIndexChanged);
             // 
             // TxtVergi
             // 
@@ -239,6 +241,7 @@
             this.BtnKaydet.Size = new System.Drawing.Size(142, 31);
             this.BtnKaydet.TabIndex = 18;
             this.BtnKaydet.Text = "KAYDET";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // RchTxtAdres
             // 
@@ -353,6 +356,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // TxtAd
             // 

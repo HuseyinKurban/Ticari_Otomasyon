@@ -59,6 +59,7 @@ namespace Ticari_Otomasyon
         {
             listele();
             sehirlistesi();
+            textTemizle();
         }
 
         private void Cmbil_SelectedIndexChanged(object sender, EventArgs e)
