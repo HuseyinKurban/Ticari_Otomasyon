@@ -17,14 +17,26 @@ namespace Ticari_Otomasyon
         {
             InitializeComponent();
         }
-        sqlbaglantisi bgl=new sqlbaglantisi();
+        sqlbaglantisi bgl = new sqlbaglantisi();
 
         void listele()
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da= new SqlDataAdapter("Select * From TBL_FIRMALAR",bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From TBL_FIRMALAR", bgl.baglanti());
             da.Fill(dt);
             gridControl1.DataSource = dt;
+        }
+
+        void carikodaciklamalar()
+        {
+
+            SqlCommand komut = new SqlCommand("Select FIRMAKOD1 From TBL_KODLAR", bgl.baglanti());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                RchKod1.Text = dr[0].ToString();
+            }
+            bgl.baglanti().Close();
         }
         void textTemizle()
         {
@@ -65,6 +77,7 @@ namespace Ticari_Otomasyon
             listele();
             sehirlistesi();
             textTemizle();
+            carikodaciklamalar();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -77,19 +90,19 @@ namespace Ticari_Otomasyon
                 TxtSektor.Text = dr["SEKTOR"].ToString();
                 TxtYetkili.Text = dr["YETKILIADSOYAD"].ToString();
                 TxtYetkiliGorev.Text = dr["YETKILISTATU"].ToString();
-                MskYetkiliTC.Text= dr["YETKILITC"].ToString();
-                MskTxtTelefon1.Text= dr["TELEFON1"].ToString();
-                MskTxtTelefon2.Text= dr["TELEFON2"].ToString();
-                MskTxtTelefon3.Text= dr["TELEFON3"].ToString();
-                MskTxtFaks.Text= dr["FAX"].ToString();
-                TxtMail.Text= dr["MAIL"].ToString();
+                MskYetkiliTC.Text = dr["YETKILITC"].ToString();
+                MskTxtTelefon1.Text = dr["TELEFON1"].ToString();
+                MskTxtTelefon2.Text = dr["TELEFON2"].ToString();
+                MskTxtTelefon3.Text = dr["TELEFON3"].ToString();
+                MskTxtFaks.Text = dr["FAX"].ToString();
+                TxtMail.Text = dr["MAIL"].ToString();
                 Cmbil.Text = dr["IL"].ToString();
                 Cmbilce.Text = dr["ILCE"].ToString();
                 TxtVergi.Text = dr["VERGIDAIRE"].ToString();
                 RchTxtAdres.Text = dr["ADRES"].ToString();
-                TxtKod1.Text= dr["OZELKOD1"].ToString();
-                TxtKod2.Text= dr["OZELKOD2"].ToString();
-                TxtKod3.Text= dr["OZELKOD3"].ToString();
+                TxtKod1.Text = dr["OZELKOD1"].ToString();
+                TxtKod2.Text = dr["OZELKOD2"].ToString();
+                TxtKod3.Text = dr["OZELKOD3"].ToString();
             }
         }
 
@@ -118,7 +131,7 @@ namespace Ticari_Otomasyon
             MessageBox.Show("Firma Bilgileri Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             listele();
             textTemizle();
-            
+
         }
 
         private void BtnTextTemizle_Click(object sender, EventArgs e)
@@ -139,6 +152,56 @@ namespace Ticari_Otomasyon
                 Cmbilce.Properties.Items.Add(dr[0]);
             }
             bgl.baglanti().Close();
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            DialogResult cevap;
+            cevap = MessageBox.Show(TxtAd.Text + " Adlı Firmayı Silmek İstiyor Musunuz ?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (cevap == DialogResult.Yes)
+            {
+                SqlCommand komut = new SqlCommand("Delete From TBL_FIRMALAR Where ID=@p1", bgl.baglanti());
+                komut.Parameters.AddWithValue("@p1", Txtid.Text);
+                komut.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Firma Bilgileri Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                listele();
+                textTemizle();
+            }
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            DialogResult cevap;
+            cevap = MessageBox.Show(TxtAd.Text + " Adlı Firma Bilgilerini Güncellemek İstiyor Musunuz ?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (cevap == DialogResult.Yes)
+            {
+                SqlCommand komut = new SqlCommand("update TBL_FIRMALAR set AD=@p1,YETKILISTATU=@p2,YETKILIADSOYAD=@p3,YETKILITC=@p4,SEKTOR=@p5,TELEFON1=@p6,TELEFON2=@p7,TELEFON3=@p8,MAIL=@p9,FAX=@p10,IL=@p11,ILCE=@p12,VERGIDAIRE=@p13,ADRES=@p14,OZELKOD1=@p15,OZELKOD2=@p16,OZELKOD3=@p17 where ID=@p18", bgl.baglanti());
+                komut.Parameters.AddWithValue("@p1", TxtAd.Text);
+                komut.Parameters.AddWithValue("@p2", TxtYetkiliGorev.Text);
+                komut.Parameters.AddWithValue("@p3", TxtYetkili.Text);
+                komut.Parameters.AddWithValue("@p4", MskYetkiliTC.Text);
+                komut.Parameters.AddWithValue("@p5", TxtSektor.Text);
+                komut.Parameters.AddWithValue("@p6", MskTxtTelefon1.Text);
+                komut.Parameters.AddWithValue("@p7", MskTxtTelefon2.Text);
+                komut.Parameters.AddWithValue("@p8", MskTxtTelefon3.Text);
+                komut.Parameters.AddWithValue("@p9", TxtMail.Text);
+                komut.Parameters.AddWithValue("@p10", MskTxtFaks.Text);
+                komut.Parameters.AddWithValue("@p11", Cmbil.Text);
+                komut.Parameters.AddWithValue("@p12", Cmbilce.Text);
+                komut.Parameters.AddWithValue("@p13", TxtVergi.Text);
+                komut.Parameters.AddWithValue("@p14", RchTxtAdres.Text);
+                komut.Parameters.AddWithValue("@p15", TxtKod1.Text);
+                komut.Parameters.AddWithValue("@p16", TxtKod2.Text);
+                komut.Parameters.AddWithValue("@p17", TxtKod3.Text);
+                komut.Parameters.AddWithValue("@p18", Txtid.Text);
+                komut.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Firma Bilgileri Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                listele();
+                textTemizle();
+            }
         }
     }
 }
