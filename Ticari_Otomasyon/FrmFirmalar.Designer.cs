@@ -33,7 +33,7 @@
             this.Cmbilce = new DevExpress.XtraEditors.ComboBoxEdit();
             this.Cmbil = new DevExpress.XtraEditors.ComboBoxEdit();
             this.TxtVergi = new DevExpress.XtraEditors.TextEdit();
-            this.MskTxtTC = new System.Windows.Forms.MaskedTextBox();
+            this.MskYetkiliTC = new System.Windows.Forms.MaskedTextBox();
             this.MskTxtTelefon1 = new System.Windows.Forms.MaskedTextBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
@@ -48,7 +48,7 @@
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.TxtSoyad = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSektor = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -59,36 +59,40 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.MskTxtFaks = new System.Windows.Forms.MaskedTextBox();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.MskTxtTelefon3 = new System.Windows.Forms.MaskedTextBox();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.TxtYetkiliGorev = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtYetkili = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
+            this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
+            this.TxtKod3 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtKod2 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtKod1 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.RchKod1 = new System.Windows.Forms.RichTextBox();
+            this.RchKod2 = new System.Windows.Forms.RichTextBox();
+            this.RchKod3 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Cmbilce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cmbil.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSektor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).BeginInit();
@@ -96,27 +100,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
-            this.xtraTabPage2.SuspendLayout();
-            this.xtraTabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtYetkiliGorev.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtYetkili.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
+            this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
-            this.groupControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            this.xtraTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
             this.xtraTabControl2.SuspendLayout();
+            this.xtraTabPage4.SuspendLayout();
+            this.xtraTabPage5.SuspendLayout();
+            this.xtraTabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
+            this.groupControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKod3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKod2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKod1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnTextTemizle
@@ -124,7 +131,7 @@
             this.BtnTextTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnTextTemizle.Appearance.Options.UseFont = true;
             this.BtnTextTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTextTemizle.ImageOptions.Image")));
-            this.BtnTextTemizle.Location = new System.Drawing.Point(116, 402);
+            this.BtnTextTemizle.Location = new System.Drawing.Point(76, 467);
             this.BtnTextTemizle.Name = "BtnTextTemizle";
             this.BtnTextTemizle.Size = new System.Drawing.Size(142, 31);
             this.BtnTextTemizle.TabIndex = 28;
@@ -161,15 +168,15 @@
             this.TxtVergi.Size = new System.Drawing.Size(163, 24);
             this.TxtVergi.TabIndex = 25;
             // 
-            // MskTxtTC
+            // MskYetkiliTC
             // 
-            this.MskTxtTC.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTxtTC.Location = new System.Drawing.Point(103, 65);
-            this.MskTxtTC.Mask = "00000000000";
-            this.MskTxtTC.Name = "MskTxtTC";
-            this.MskTxtTC.Size = new System.Drawing.Size(155, 26);
-            this.MskTxtTC.TabIndex = 24;
-            this.MskTxtTC.ValidatingType = typeof(int);
+            this.MskYetkiliTC.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MskYetkiliTC.Location = new System.Drawing.Point(103, 65);
+            this.MskYetkiliTC.Mask = "00000000000";
+            this.MskYetkiliTC.Name = "MskYetkiliTC";
+            this.MskYetkiliTC.Size = new System.Drawing.Size(155, 26);
+            this.MskYetkiliTC.TabIndex = 24;
+            this.MskYetkiliTC.ValidatingType = typeof(int);
             // 
             // MskTxtTelefon1
             // 
@@ -205,7 +212,7 @@
             this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGuncelle.Appearance.Options.UseFont = true;
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(117, 328);
+            this.BtnGuncelle.Location = new System.Drawing.Point(77, 393);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(142, 31);
             this.BtnGuncelle.TabIndex = 20;
@@ -216,7 +223,7 @@
             this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnSil.Appearance.Options.UseFont = true;
             this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(117, 365);
+            this.BtnSil.Location = new System.Drawing.Point(77, 430);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(142, 31);
             this.BtnSil.TabIndex = 19;
@@ -227,7 +234,7 @@
             this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKaydet.Appearance.Options.UseFont = true;
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(117, 291);
+            this.BtnKaydet.Location = new System.Drawing.Point(77, 356);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(142, 31);
             this.BtnKaydet.TabIndex = 18;
@@ -236,9 +243,9 @@
             // RchTxtAdres
             // 
             this.RchTxtAdres.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RchTxtAdres.Location = new System.Drawing.Point(95, 108);
+            this.RchTxtAdres.Location = new System.Drawing.Point(6, 132);
             this.RchTxtAdres.Name = "RchTxtAdres";
-            this.RchTxtAdres.Size = new System.Drawing.Size(163, 151);
+            this.RchTxtAdres.Size = new System.Drawing.Size(264, 217);
             this.RchTxtAdres.TabIndex = 17;
             this.RchTxtAdres.Text = "";
             // 
@@ -311,14 +318,14 @@
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "TELEFON 1 :";
             // 
-            // TxtSoyad
+            // TxtSektor
             // 
-            this.TxtSoyad.Location = new System.Drawing.Point(103, 66);
-            this.TxtSoyad.Name = "TxtSoyad";
-            this.TxtSoyad.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtSoyad.Properties.Appearance.Options.UseFont = true;
-            this.TxtSoyad.Size = new System.Drawing.Size(155, 24);
-            this.TxtSoyad.TabIndex = 6;
+            this.TxtSektor.Location = new System.Drawing.Point(103, 66);
+            this.TxtSektor.Name = "TxtSektor";
+            this.TxtSektor.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtSektor.Properties.Appearance.Options.UseFont = true;
+            this.TxtSektor.Size = new System.Drawing.Size(155, 24);
+            this.TxtSektor.TabIndex = 6;
             // 
             // labelControl3
             // 
@@ -419,94 +426,11 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(281, 664);
             this.xtraTabPage1.Text = "Firma Bilgileri";
             // 
-            // xtraTabPage2
-            // 
-            this.xtraTabPage2.Controls.Add(this.groupControl5);
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(281, 664);
-            this.xtraTabPage2.Text = "Adres Bilgileri";
-            // 
-            // xtraTabPage3
-            // 
-            this.xtraTabPage3.Controls.Add(this.groupControl7);
-            this.xtraTabPage3.Controls.Add(this.groupControl6);
-            this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(281, 664);
-            this.xtraTabPage3.Text = "Özel Kodlar";
-            // 
-            // groupControl2
-            // 
-            this.groupControl2.Controls.Add(this.TxtAd);
-            this.groupControl2.Controls.Add(this.labelControl1);
-            this.groupControl2.Controls.Add(this.Txtid);
-            this.groupControl2.Controls.Add(this.labelControl2);
-            this.groupControl2.Controls.Add(this.TxtSoyad);
-            this.groupControl2.Controls.Add(this.labelControl3);
-            this.groupControl2.Location = new System.Drawing.Point(3, 3);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.ShowCaption = false;
-            this.groupControl2.Size = new System.Drawing.Size(270, 99);
-            this.groupControl2.TabIndex = 0;
-            this.groupControl2.Text = "groupControl2";
-            // 
-            // groupControl3
-            // 
-            this.groupControl3.Controls.Add(this.textEdit2);
-            this.groupControl3.Controls.Add(this.labelControl13);
-            this.groupControl3.Controls.Add(this.textEdit1);
-            this.groupControl3.Controls.Add(this.labelControl12);
-            this.groupControl3.Controls.Add(this.MskTxtTC);
-            this.groupControl3.Controls.Add(this.labelControl6);
-            this.groupControl3.Location = new System.Drawing.Point(3, 108);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.ShowCaption = false;
-            this.groupControl3.Size = new System.Drawing.Size(270, 104);
-            this.groupControl3.TabIndex = 1;
-            this.groupControl3.Text = "groupControl3";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(103, 5);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(155, 24);
-            this.textEdit1.TabIndex = 6;
-            // 
-            // labelControl12
-            // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(17, 11);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(71, 18);
-            this.labelControl12.TabIndex = 5;
-            this.labelControl12.Text = "YETKİLİ :";
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(103, 35);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(155, 24);
-            this.textEdit2.TabIndex = 8;
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(6, 41);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(82, 18);
-            this.labelControl13.TabIndex = 7;
-            this.labelControl13.Text = "Y. GÖREV :";
-            // 
             // groupControl4
             // 
-            this.groupControl4.Controls.Add(this.maskedTextBox2);
+            this.groupControl4.Controls.Add(this.MskTxtFaks);
             this.groupControl4.Controls.Add(this.labelControl15);
-            this.groupControl4.Controls.Add(this.maskedTextBox1);
+            this.groupControl4.Controls.Add(this.MskTxtTelefon3);
             this.groupControl4.Controls.Add(this.labelControl14);
             this.groupControl4.Controls.Add(this.MskTxtTelefon2);
             this.groupControl4.Controls.Add(this.labelControl4);
@@ -521,14 +445,33 @@
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "groupControl4";
             // 
-            // maskedTextBox1
+            // MskTxtFaks
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(116, 68);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(142, 26);
-            this.maskedTextBox1.TabIndex = 24;
+            this.MskTxtFaks.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MskTxtFaks.Location = new System.Drawing.Point(116, 100);
+            this.MskTxtFaks.Mask = "(999) 000-0000";
+            this.MskTxtFaks.Name = "MskTxtFaks";
+            this.MskTxtFaks.Size = new System.Drawing.Size(142, 26);
+            this.MskTxtFaks.TabIndex = 26;
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl15.Appearance.Options.UseFont = true;
+            this.labelControl15.Location = new System.Drawing.Point(54, 108);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(48, 18);
+            this.labelControl15.TabIndex = 27;
+            this.labelControl15.Text = "FAKS :";
+            // 
+            // MskTxtTelefon3
+            // 
+            this.MskTxtTelefon3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MskTxtTelefon3.Location = new System.Drawing.Point(116, 68);
+            this.MskTxtTelefon3.Mask = "(999) 000-0000";
+            this.MskTxtTelefon3.Name = "MskTxtTelefon3";
+            this.MskTxtTelefon3.Size = new System.Drawing.Size(142, 26);
+            this.MskTxtTelefon3.TabIndex = 24;
             // 
             // labelControl14
             // 
@@ -540,24 +483,80 @@
             this.labelControl14.TabIndex = 25;
             this.labelControl14.Text = "TELEFON 3 :";
             // 
-            // maskedTextBox2
+            // groupControl3
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(116, 100);
-            this.maskedTextBox2.Mask = "(999) 000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(142, 26);
-            this.maskedTextBox2.TabIndex = 26;
+            this.groupControl3.Controls.Add(this.TxtYetkiliGorev);
+            this.groupControl3.Controls.Add(this.labelControl13);
+            this.groupControl3.Controls.Add(this.TxtYetkili);
+            this.groupControl3.Controls.Add(this.labelControl12);
+            this.groupControl3.Controls.Add(this.MskYetkiliTC);
+            this.groupControl3.Controls.Add(this.labelControl6);
+            this.groupControl3.Location = new System.Drawing.Point(3, 108);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.ShowCaption = false;
+            this.groupControl3.Size = new System.Drawing.Size(270, 104);
+            this.groupControl3.TabIndex = 1;
+            this.groupControl3.Text = "groupControl3";
             // 
-            // labelControl15
+            // TxtYetkiliGorev
             // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Location = new System.Drawing.Point(54, 108);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(48, 18);
-            this.labelControl15.TabIndex = 27;
-            this.labelControl15.Text = "FAKS :";
+            this.TxtYetkiliGorev.Location = new System.Drawing.Point(103, 35);
+            this.TxtYetkiliGorev.Name = "TxtYetkiliGorev";
+            this.TxtYetkiliGorev.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtYetkiliGorev.Properties.Appearance.Options.UseFont = true;
+            this.TxtYetkiliGorev.Size = new System.Drawing.Size(155, 24);
+            this.TxtYetkiliGorev.TabIndex = 8;
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Location = new System.Drawing.Point(6, 41);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(82, 18);
+            this.labelControl13.TabIndex = 7;
+            this.labelControl13.Text = "Y. GÖREV :";
+            // 
+            // TxtYetkili
+            // 
+            this.TxtYetkili.Location = new System.Drawing.Point(103, 5);
+            this.TxtYetkili.Name = "TxtYetkili";
+            this.TxtYetkili.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtYetkili.Properties.Appearance.Options.UseFont = true;
+            this.TxtYetkili.Size = new System.Drawing.Size(155, 24);
+            this.TxtYetkili.TabIndex = 6;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Location = new System.Drawing.Point(17, 11);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(71, 18);
+            this.labelControl12.TabIndex = 5;
+            this.labelControl12.Text = "YETKİLİ :";
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.TxtAd);
+            this.groupControl2.Controls.Add(this.labelControl1);
+            this.groupControl2.Controls.Add(this.Txtid);
+            this.groupControl2.Controls.Add(this.labelControl2);
+            this.groupControl2.Controls.Add(this.TxtSektor);
+            this.groupControl2.Controls.Add(this.labelControl3);
+            this.groupControl2.Location = new System.Drawing.Point(3, 3);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.ShowCaption = false;
+            this.groupControl2.Size = new System.Drawing.Size(270, 99);
+            this.groupControl2.TabIndex = 0;
+            this.groupControl2.Text = "groupControl2";
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Controls.Add(this.groupControl5);
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(281, 664);
+            this.xtraTabPage2.Text = "Adres Bilgileri";
             // 
             // groupControl5
             // 
@@ -580,13 +579,64 @@
             this.groupControl5.TabIndex = 0;
             this.groupControl5.Text = "groupControl5";
             // 
+            // xtraTabPage3
+            // 
+            this.xtraTabPage3.Controls.Add(this.groupControl7);
+            this.xtraTabPage3.Controls.Add(this.groupControl6);
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(281, 664);
+            this.xtraTabPage3.Text = "Özel Kodlar";
+            // 
+            // groupControl7
+            // 
+            this.groupControl7.Controls.Add(this.xtraTabControl2);
+            this.groupControl7.Location = new System.Drawing.Point(3, 116);
+            this.groupControl7.Name = "groupControl7";
+            this.groupControl7.Size = new System.Drawing.Size(275, 356);
+            this.groupControl7.TabIndex = 1;
+            this.groupControl7.Text = "Özel Kodlar ve Anlamları";
+            // 
+            // xtraTabControl2
+            // 
+            this.xtraTabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraTabControl2.Location = new System.Drawing.Point(2, 23);
+            this.xtraTabControl2.Name = "xtraTabControl2";
+            this.xtraTabControl2.SelectedTabPage = this.xtraTabPage4;
+            this.xtraTabControl2.Size = new System.Drawing.Size(271, 331);
+            this.xtraTabControl2.TabIndex = 0;
+            this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage4,
+            this.xtraTabPage5,
+            this.xtraTabPage6});
+            // 
+            // xtraTabPage4
+            // 
+            this.xtraTabPage4.Controls.Add(this.RchKod1);
+            this.xtraTabPage4.Name = "xtraTabPage4";
+            this.xtraTabPage4.Size = new System.Drawing.Size(269, 306);
+            this.xtraTabPage4.Text = "Özel Kod 1";
+            // 
+            // xtraTabPage5
+            // 
+            this.xtraTabPage5.Controls.Add(this.RchKod2);
+            this.xtraTabPage5.Name = "xtraTabPage5";
+            this.xtraTabPage5.Size = new System.Drawing.Size(269, 306);
+            this.xtraTabPage5.Text = "Özel Kod 2";
+            // 
+            // xtraTabPage6
+            // 
+            this.xtraTabPage6.Controls.Add(this.RchKod3);
+            this.xtraTabPage6.Name = "xtraTabPage6";
+            this.xtraTabPage6.Size = new System.Drawing.Size(269, 306);
+            this.xtraTabPage6.Text = "Özel Kod 3";
+            // 
             // groupControl6
             // 
-            this.groupControl6.Controls.Add(this.textEdit5);
+            this.groupControl6.Controls.Add(this.TxtKod3);
             this.groupControl6.Controls.Add(this.labelControl18);
-            this.groupControl6.Controls.Add(this.textEdit4);
+            this.groupControl6.Controls.Add(this.TxtKod2);
             this.groupControl6.Controls.Add(this.labelControl17);
-            this.groupControl6.Controls.Add(this.textEdit3);
+            this.groupControl6.Controls.Add(this.TxtKod1);
             this.groupControl6.Controls.Add(this.labelControl16);
             this.groupControl6.Location = new System.Drawing.Point(3, 3);
             this.groupControl6.Name = "groupControl6";
@@ -595,52 +645,14 @@
             this.groupControl6.TabIndex = 0;
             this.groupControl6.Text = "groupControl6";
             // 
-            // textEdit3
+            // TxtKod3
             // 
-            this.textEdit3.Location = new System.Drawing.Point(95, 13);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit3.Properties.Appearance.Options.UseFont = true;
-            this.textEdit3.Size = new System.Drawing.Size(163, 24);
-            this.textEdit3.TabIndex = 27;
-            // 
-            // labelControl16
-            // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(6, 19);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(56, 18);
-            this.labelControl16.TabIndex = 26;
-            this.labelControl16.Text = "KOD 1 :";
-            // 
-            // textEdit4
-            // 
-            this.textEdit4.Location = new System.Drawing.Point(95, 43);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit4.Properties.Appearance.Options.UseFont = true;
-            this.textEdit4.Size = new System.Drawing.Size(163, 24);
-            this.textEdit4.TabIndex = 29;
-            // 
-            // labelControl17
-            // 
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Location = new System.Drawing.Point(6, 49);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(56, 18);
-            this.labelControl17.TabIndex = 28;
-            this.labelControl17.Text = "KOD 2 :";
-            // 
-            // textEdit5
-            // 
-            this.textEdit5.Location = new System.Drawing.Point(95, 73);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit5.Properties.Appearance.Options.UseFont = true;
-            this.textEdit5.Size = new System.Drawing.Size(163, 24);
-            this.textEdit5.TabIndex = 31;
+            this.TxtKod3.Location = new System.Drawing.Point(95, 73);
+            this.TxtKod3.Name = "TxtKod3";
+            this.TxtKod3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtKod3.Properties.Appearance.Options.UseFont = true;
+            this.TxtKod3.Size = new System.Drawing.Size(163, 24);
+            this.TxtKod3.TabIndex = 31;
             // 
             // labelControl18
             // 
@@ -652,38 +664,70 @@
             this.labelControl18.TabIndex = 30;
             this.labelControl18.Text = "KOD 3 :";
             // 
-            // groupControl7
+            // TxtKod2
             // 
-            this.groupControl7.Controls.Add(this.xtraTabControl2);
-            this.groupControl7.Location = new System.Drawing.Point(3, 116);
-            this.groupControl7.Name = "groupControl7";
-            this.groupControl7.Size = new System.Drawing.Size(275, 293);
-            this.groupControl7.TabIndex = 1;
-            this.groupControl7.Text = "Özel Kodlar ve Anlamları";
+            this.TxtKod2.Location = new System.Drawing.Point(95, 43);
+            this.TxtKod2.Name = "TxtKod2";
+            this.TxtKod2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtKod2.Properties.Appearance.Options.UseFont = true;
+            this.TxtKod2.Size = new System.Drawing.Size(163, 24);
+            this.TxtKod2.TabIndex = 29;
             // 
-            // xtraTabControl2
+            // labelControl17
             // 
-            this.xtraTabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl2.Location = new System.Drawing.Point(2, 23);
-            this.xtraTabControl2.Name = "xtraTabControl2";
-            this.xtraTabControl2.SelectedTabPage = this.xtraTabPage4;
-            this.xtraTabControl2.Size = new System.Drawing.Size(271, 268);
-            this.xtraTabControl2.TabIndex = 0;
-            this.xtraTabControl2.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage4,
-            this.xtraTabPage5});
+            this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl17.Appearance.Options.UseFont = true;
+            this.labelControl17.Location = new System.Drawing.Point(6, 49);
+            this.labelControl17.Name = "labelControl17";
+            this.labelControl17.Size = new System.Drawing.Size(56, 18);
+            this.labelControl17.TabIndex = 28;
+            this.labelControl17.Text = "KOD 2 :";
             // 
-            // xtraTabPage4
+            // TxtKod1
             // 
-            this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(269, 243);
-            this.xtraTabPage4.Text = "xtraTabPage4";
+            this.TxtKod1.Location = new System.Drawing.Point(95, 13);
+            this.TxtKod1.Name = "TxtKod1";
+            this.TxtKod1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtKod1.Properties.Appearance.Options.UseFont = true;
+            this.TxtKod1.Size = new System.Drawing.Size(163, 24);
+            this.TxtKod1.TabIndex = 27;
             // 
-            // xtraTabPage5
+            // labelControl16
             // 
-            this.xtraTabPage5.Name = "xtraTabPage5";
-            this.xtraTabPage5.Size = new System.Drawing.Size(298, 275);
-            this.xtraTabPage5.Text = "xtraTabPage5";
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl16.Appearance.Options.UseFont = true;
+            this.labelControl16.Location = new System.Drawing.Point(6, 19);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(56, 18);
+            this.labelControl16.TabIndex = 26;
+            this.labelControl16.Text = "KOD 1 :";
+            // 
+            // RchKod1
+            // 
+            this.RchKod1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RchKod1.Location = new System.Drawing.Point(0, 0);
+            this.RchKod1.Name = "RchKod1";
+            this.RchKod1.Size = new System.Drawing.Size(269, 306);
+            this.RchKod1.TabIndex = 0;
+            this.RchKod1.Text = "";
+            // 
+            // RchKod2
+            // 
+            this.RchKod2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RchKod2.Location = new System.Drawing.Point(0, 0);
+            this.RchKod2.Name = "RchKod2";
+            this.RchKod2.Size = new System.Drawing.Size(269, 306);
+            this.RchKod2.TabIndex = 1;
+            this.RchKod2.Text = "";
+            // 
+            // RchKod3
+            // 
+            this.RchKod3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RchKod3.Location = new System.Drawing.Point(0, 0);
+            this.RchKod3.Name = "RchKod3";
+            this.RchKod3.Size = new System.Drawing.Size(269, 306);
+            this.RchKod3.TabIndex = 1;
+            this.RchKod3.Text = "";
             // 
             // FrmFirmalar
             // 
@@ -699,7 +743,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Cmbil.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSektor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
@@ -707,32 +751,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
-            this.xtraTabPage2.ResumeLayout(false);
-            this.xtraTabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            this.groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
-            this.groupControl3.ResumeLayout(false);
-            this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
+            this.groupControl3.ResumeLayout(false);
+            this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtYetkiliGorev.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtYetkili.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
+            this.groupControl2.PerformLayout();
+            this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
             this.groupControl5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
-            this.groupControl6.ResumeLayout(false);
-            this.groupControl6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            this.xtraTabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
             this.groupControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).EndInit();
             this.xtraTabControl2.ResumeLayout(false);
+            this.xtraTabPage4.ResumeLayout(false);
+            this.xtraTabPage5.ResumeLayout(false);
+            this.xtraTabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
+            this.groupControl6.ResumeLayout(false);
+            this.groupControl6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKod3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKod2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKod1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -743,7 +790,7 @@
         private DevExpress.XtraEditors.ComboBoxEdit Cmbilce;
         private DevExpress.XtraEditors.ComboBoxEdit Cmbil;
         private DevExpress.XtraEditors.TextEdit TxtVergi;
-        private System.Windows.Forms.MaskedTextBox MskTxtTC;
+        private System.Windows.Forms.MaskedTextBox MskYetkiliTC;
         private System.Windows.Forms.MaskedTextBox MskTxtTelefon1;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
@@ -758,7 +805,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit TxtSoyad;
+        private DevExpress.XtraEditors.TextEdit TxtSektor;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
@@ -772,27 +819,31 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit TxtYetkiliGorev;
         private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit TxtYetkili;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.GroupControl groupControl4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox MskTxtFaks;
         private DevExpress.XtraEditors.LabelControl labelControl15;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox MskTxtTelefon3;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.GroupControl groupControl5;
         private DevExpress.XtraEditors.GroupControl groupControl7;
         private DevExpress.XtraEditors.GroupControl groupControl6;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit TxtKod3;
         private DevExpress.XtraEditors.LabelControl labelControl18;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit TxtKod2;
         private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit TxtKod1;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl2;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage4;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage5;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage6;
+        private System.Windows.Forms.RichTextBox RchKod1;
+        private System.Windows.Forms.RichTextBox RchKod2;
+        private System.Windows.Forms.RichTextBox RchKod3;
     }
 }

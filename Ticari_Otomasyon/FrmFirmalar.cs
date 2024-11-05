@@ -16,5 +16,7 @@ namespace Ticari_Otomasyon
         {
             InitializeComponent();
         }
+
+      
     }
 }
