@@ -42,5 +42,17 @@ namespace Ticari_Otomasyon
             }
             frmusteri.Focus();
         }
+        FrmFirmalar frfirma;
+        private void BtnFirmalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(frfirma==null)
+            {
+                frfirma=new FrmFirmalar();
+                frfirma.MdiParent = this;
+                frfirma.Show();
+            }
+            frfirma.Focus();
+
+        }
     }
 }
