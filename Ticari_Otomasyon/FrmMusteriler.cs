@@ -19,6 +19,7 @@ namespace Ticari_Otomasyon
             InitializeComponent();
         }
         sqlbaglantisi bgl = new sqlbaglantisi();
+
         void listele()
         {
             DataTable dt = new DataTable();

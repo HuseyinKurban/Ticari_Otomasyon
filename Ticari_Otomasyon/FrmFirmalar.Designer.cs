@@ -705,6 +705,7 @@
             // RchKod1
             // 
             this.RchKod1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RchKod1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.RchKod1.Location = new System.Drawing.Point(0, 0);
             this.RchKod1.Name = "RchKod1";
             this.RchKod1.Size = new System.Drawing.Size(269, 306);
@@ -714,6 +715,7 @@
             // RchKod2
             // 
             this.RchKod2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RchKod2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.RchKod2.Location = new System.Drawing.Point(0, 0);
             this.RchKod2.Name = "RchKod2";
             this.RchKod2.Size = new System.Drawing.Size(269, 306);
@@ -723,6 +725,7 @@
             // RchKod3
             // 
             this.RchKod3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RchKod3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.RchKod3.Location = new System.Drawing.Point(0, 0);
             this.RchKod3.Name = "RchKod3";
             this.RchKod3.Size = new System.Drawing.Size(269, 306);
@@ -739,6 +742,7 @@
             this.Name = "FrmFirmalar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Firmalar";
+            this.Load += new System.EventHandler(this.FrmFirmalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Cmbilce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cmbil.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergi.Properties)).EndInit();
