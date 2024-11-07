@@ -76,8 +76,11 @@
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.RchKod1 = new System.Windows.Forms.RichTextBox();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.RchKod2 = new System.Windows.Forms.RichTextBox();
             this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
+            this.RchKod3 = new System.Windows.Forms.RichTextBox();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.TxtKod3 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
@@ -85,9 +88,6 @@
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.TxtKod1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.RchKod1 = new System.Windows.Forms.RichTextBox();
-            this.RchKod2 = new System.Windows.Forms.RichTextBox();
-            this.RchKod3 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Cmbilce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cmbil.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtVergi.Properties)).BeginInit();
@@ -358,6 +358,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.gridView1_RowStyle);
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // TxtAd
@@ -622,6 +623,16 @@
             this.xtraTabPage4.Size = new System.Drawing.Size(269, 306);
             this.xtraTabPage4.Text = "Özel Kod 1";
             // 
+            // RchKod1
+            // 
+            this.RchKod1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RchKod1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.RchKod1.Location = new System.Drawing.Point(0, 0);
+            this.RchKod1.Name = "RchKod1";
+            this.RchKod1.Size = new System.Drawing.Size(269, 306);
+            this.RchKod1.TabIndex = 0;
+            this.RchKod1.Text = "";
+            // 
             // xtraTabPage5
             // 
             this.xtraTabPage5.Controls.Add(this.RchKod2);
@@ -629,12 +640,32 @@
             this.xtraTabPage5.Size = new System.Drawing.Size(269, 306);
             this.xtraTabPage5.Text = "Özel Kod 2";
             // 
+            // RchKod2
+            // 
+            this.RchKod2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RchKod2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.RchKod2.Location = new System.Drawing.Point(0, 0);
+            this.RchKod2.Name = "RchKod2";
+            this.RchKod2.Size = new System.Drawing.Size(269, 306);
+            this.RchKod2.TabIndex = 1;
+            this.RchKod2.Text = "";
+            // 
             // xtraTabPage6
             // 
             this.xtraTabPage6.Controls.Add(this.RchKod3);
             this.xtraTabPage6.Name = "xtraTabPage6";
             this.xtraTabPage6.Size = new System.Drawing.Size(269, 306);
             this.xtraTabPage6.Text = "Özel Kod 3";
+            // 
+            // RchKod3
+            // 
+            this.RchKod3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RchKod3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.RchKod3.Location = new System.Drawing.Point(0, 0);
+            this.RchKod3.Name = "RchKod3";
+            this.RchKod3.Size = new System.Drawing.Size(269, 306);
+            this.RchKod3.TabIndex = 1;
+            this.RchKod3.Text = "";
             // 
             // groupControl6
             // 
@@ -707,36 +738,6 @@
             this.labelControl16.Size = new System.Drawing.Size(56, 18);
             this.labelControl16.TabIndex = 26;
             this.labelControl16.Text = "KOD 1 :";
-            // 
-            // RchKod1
-            // 
-            this.RchKod1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RchKod1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RchKod1.Location = new System.Drawing.Point(0, 0);
-            this.RchKod1.Name = "RchKod1";
-            this.RchKod1.Size = new System.Drawing.Size(269, 306);
-            this.RchKod1.TabIndex = 0;
-            this.RchKod1.Text = "";
-            // 
-            // RchKod2
-            // 
-            this.RchKod2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RchKod2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RchKod2.Location = new System.Drawing.Point(0, 0);
-            this.RchKod2.Name = "RchKod2";
-            this.RchKod2.Size = new System.Drawing.Size(269, 306);
-            this.RchKod2.TabIndex = 1;
-            this.RchKod2.Text = "";
-            // 
-            // RchKod3
-            // 
-            this.RchKod3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RchKod3.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RchKod3.Location = new System.Drawing.Point(0, 0);
-            this.RchKod3.Name = "RchKod3";
-            this.RchKod3.Size = new System.Drawing.Size(269, 306);
-            this.RchKod3.TabIndex = 1;
-            this.RchKod3.Text = "";
             // 
             // FrmFirmalar
             // 

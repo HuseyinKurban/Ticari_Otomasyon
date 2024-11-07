@@ -16,6 +16,7 @@ namespace Ticari_Otomasyon
         {
             InitializeComponent();
         }
+
         FrmUrunler frurun;
         private void BtnUrunler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -30,6 +31,7 @@ namespace Ticari_Otomasyon
             }
             frurun.Focus();
         }
+
         FrmMusteriler frmusteri;
         private void BtnMusteriler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -42,6 +44,7 @@ namespace Ticari_Otomasyon
             }
             frmusteri.Focus();
         }
+
         FrmFirmalar frfirma;
         private void BtnFirmalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -53,6 +56,30 @@ namespace Ticari_Otomasyon
             }
             frfirma.Focus();
 
+        }
+
+        FrmPersoneller frpersonel;
+        private void BtnPersoneller_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(frpersonel==null)
+            {
+                frpersonel=new FrmPersoneller();
+                frpersonel.MdiParent = this;
+                frpersonel.Show();
+            }
+            frpersonel.Focus();
+        }
+
+        FrmRehber frrehber;
+        private void BtnRehber_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frrehber==null)
+            {
+                frrehber=new FrmRehber();
+                frrehber.MdiParent = this;
+                frrehber.Show();
+            }
+            frrehber.Focus();
         }
     }
 }

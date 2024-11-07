@@ -160,5 +160,11 @@ namespace Ticari_Otomasyon
             listele();
             textTemizle();
         }
+
+        private void gridView1_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
+        {
+            e.Appearance.BackColor = Color.Beige;
+            e.Appearance.BackColor2 = Color.SlateGray;
+        }
     }
 }

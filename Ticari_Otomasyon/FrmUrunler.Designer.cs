@@ -32,6 +32,7 @@
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTextTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -53,7 +54,6 @@
             this.MskTxtYil = new System.Windows.Forms.MaskedTextBox();
             this.Txtid = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.BtnTextTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -83,6 +83,7 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.gridView1_RowStyle);
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // groupControl1
@@ -114,6 +115,18 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(283, 689);
             this.groupControl1.TabIndex = 1;
+            // 
+            // BtnTextTemizle
+            // 
+            this.BtnTextTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnTextTemizle.Appearance.Options.UseFont = true;
+            this.BtnTextTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTextTemizle.ImageOptions.Image")));
+            this.BtnTextTemizle.Location = new System.Drawing.Point(104, 621);
+            this.BtnTextTemizle.Name = "BtnTextTemizle";
+            this.BtnTextTemizle.Size = new System.Drawing.Size(168, 31);
+            this.BtnTextTemizle.TabIndex = 29;
+            this.BtnTextTemizle.Text = "TEMİZLE";
+            this.BtnTextTemizle.Click += new System.EventHandler(this.BtnTextTemizle_Click);
             // 
             // BtnGuncelle
             // 
@@ -322,18 +335,6 @@
             this.labelControl1.Size = new System.Drawing.Size(27, 18);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID :";
-            // 
-            // BtnTextTemizle
-            // 
-            this.BtnTextTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnTextTemizle.Appearance.Options.UseFont = true;
-            this.BtnTextTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTextTemizle.ImageOptions.Image")));
-            this.BtnTextTemizle.Location = new System.Drawing.Point(104, 621);
-            this.BtnTextTemizle.Name = "BtnTextTemizle";
-            this.BtnTextTemizle.Size = new System.Drawing.Size(168, 31);
-            this.BtnTextTemizle.TabIndex = 29;
-            this.BtnTextTemizle.Text = "TEMİZLE";
-            this.BtnTextTemizle.Click += new System.EventHandler(this.BtnTextTemizle_Click);
             // 
             // FrmUrunler
             // 
