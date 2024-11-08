@@ -54,5 +54,30 @@ namespace Ticari_Otomasyon
 
             e.Appearance.BackColor2 = Color.DarkSalmon;
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmMail fr = new FrmMail();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                fr.mail = dr["MAIL"].ToString();
+            }
+           fr.Show();
+
+        }
+
+        private void gridView2_DoubleClick(object sender, EventArgs e)
+        {
+            FrmMail fr = new FrmMail();
+            DataRow dr = gridView2.GetDataRow(gridView2.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                fr.mail = dr["MAIL"].ToString();
+            }
+            fr.Show();
+        }
     }
 }
