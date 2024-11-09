@@ -81,5 +81,17 @@ namespace Ticari_Otomasyon
             }
             frrehber.Focus();
         }
+
+        FrmGiderler frgider;
+        private void BtnGiderler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(frgider==null)
+            {
+                frgider=new FrmGiderler();
+                frgider.MdiParent = this;
+                frgider.Show();
+            }
+            frgider.Focus();
+        }
     }
 }
