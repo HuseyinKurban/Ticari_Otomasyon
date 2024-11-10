@@ -107,7 +107,7 @@ namespace Ticari_Otomasyon
         FrmFaturalar frfatura;
         private void BtnFaturalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+          
             if (frfatura == null)
             {
                 frfatura = new FrmFaturalar();

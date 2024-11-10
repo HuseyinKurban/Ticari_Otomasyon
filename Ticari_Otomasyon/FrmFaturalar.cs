@@ -72,10 +72,25 @@ namespace Ticari_Otomasyon
                 listele();
 
             }
-            if (TxtFaturaid.Text==null)
+            if (TxtFaturaid.Text!="")
             {
+                double miktar, tutar, fiyat;
+                fiyat=Convert.ToDouble(TxtFiyat.Text);
+                miktar=Convert.ToDouble(TxtMiktar.Text);
+                tutar = miktar * fiyat;
+                TxtTutar.Text=tutar.ToString();
+
                 SqlCommand komut2=new SqlCommand("insert into TBL_FATURADETAY (URUNAD,MIKTAR,FIYAT,TUTAR,FATURAID) VALUES (@p1,@p2,@p3,@p4,@p5)",bgl.baglanti());
+                komut2.Parameters.AddWithValue("@p1", TxtUrunAd.Text);
+                komut2.Parameters.AddWithValue("@p2", TxtMiktar.Text);
+                komut2.Parameters.AddWithValue("@p3", TxtFiyat.Text);
+                komut2.Parameters.AddWithValue("@p4", TxtTutar.Text);
+                komut2.Parameters.AddWithValue("@p5", TxtFaturaid.Text);
+                komut2.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Faturaya Ait Ürün Bilgileri Başarıyla Kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
+
             }
         }
 
