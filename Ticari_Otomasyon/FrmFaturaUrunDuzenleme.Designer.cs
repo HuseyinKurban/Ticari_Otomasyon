@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFaturaUrunDuzenleme));
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.TxtTutar = new DevExpress.XtraEditors.TextEdit();
             this.TxtFiyat = new DevExpress.XtraEditors.TextEdit();
             this.TxtMiktar = new DevExpress.XtraEditors.TextEdit();
@@ -40,8 +42,6 @@
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtTutar.Properties)).BeginInit();
@@ -72,6 +72,30 @@
             this.groupControl5.Size = new System.Drawing.Size(338, 276);
             this.groupControl5.TabIndex = 34;
             this.groupControl5.Text = "groupControl5";
+            // 
+            // BtnGuncelle
+            // 
+            this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGuncelle.Appearance.Options.UseFont = true;
+            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
+            this.BtnGuncelle.Location = new System.Drawing.Point(136, 169);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(142, 31);
+            this.BtnGuncelle.TabIndex = 40;
+            this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
+            // 
+            // BtnSil
+            // 
+            this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSil.Appearance.Options.UseFont = true;
+            this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
+            this.BtnSil.Location = new System.Drawing.Point(136, 217);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(142, 31);
+            this.BtnSil.TabIndex = 39;
+            this.BtnSil.Text = "SİL";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // TxtTutar
             // 
@@ -131,6 +155,7 @@
             // 
             // TxtUrunid
             // 
+            this.TxtUrunid.Enabled = false;
             this.TxtUrunid.Location = new System.Drawing.Point(106, 10);
             this.TxtUrunid.Name = "TxtUrunid";
             this.TxtUrunid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -167,30 +192,6 @@
             this.labelControl9.Size = new System.Drawing.Size(79, 18);
             this.labelControl9.TabIndex = 16;
             this.labelControl9.Text = "URUN AD :";
-            // 
-            // BtnGuncelle
-            // 
-            this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGuncelle.Appearance.Options.UseFont = true;
-            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(136, 169);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(142, 31);
-            this.BtnGuncelle.TabIndex = 40;
-            this.BtnGuncelle.Text = "GÜNCELLE";
-            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
-            // 
-            // BtnSil
-            // 
-            this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnSil.Appearance.Options.UseFont = true;
-            this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(136, 217);
-            this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(142, 31);
-            this.BtnSil.TabIndex = 39;
-            this.BtnSil.Text = "SİL";
-            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // FrmFaturaUrunDuzenleme
             // 
