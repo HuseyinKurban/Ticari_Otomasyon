@@ -34,6 +34,7 @@
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.TxtFaturaid = new DevExpress.XtraEditors.TextEdit();
             this.TxtTutar = new DevExpress.XtraEditors.TextEdit();
@@ -49,6 +50,9 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.BtnTextTemizle = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.TxtTalan = new DevExpress.XtraEditors.TextEdit();
             this.TxtTeden = new DevExpress.XtraEditors.TextEdit();
@@ -68,10 +72,6 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.BtnTextTemizle = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
@@ -144,15 +144,24 @@
             // xtraTabPage2
             // 
             this.xtraTabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.xtraTabPage2.Controls.Add(this.BtnTextTemizle);
-            this.xtraTabPage2.Controls.Add(this.BtnGuncelle);
-            this.xtraTabPage2.Controls.Add(this.BtnSil);
             this.xtraTabPage2.Controls.Add(this.BtnKaydet);
             this.xtraTabPage2.Controls.Add(this.groupControl5);
             this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(342, 645);
             this.xtraTabPage2.Text = "Fatura Detayları";
+            // 
+            // BtnKaydet
+            // 
+            this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnKaydet.Appearance.Options.UseFont = true;
+            this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
+            this.BtnKaydet.Location = new System.Drawing.Point(124, 230);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(142, 31);
+            this.BtnKaydet.TabIndex = 33;
+            this.BtnKaydet.Text = "KAYDET";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // groupControl5
             // 
@@ -306,6 +315,9 @@
             this.xtraTabPage1.Appearance.PageClient.BackColor = System.Drawing.Color.Firebrick;
             this.xtraTabPage1.Appearance.PageClient.Options.UseBackColor = true;
             this.xtraTabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.xtraTabPage1.Controls.Add(this.BtnTextTemizle);
+            this.xtraTabPage1.Controls.Add(this.BtnGuncelle);
+            this.xtraTabPage1.Controls.Add(this.BtnSil);
             this.xtraTabPage1.Controls.Add(this.groupControl4);
             this.xtraTabPage1.Controls.Add(this.groupControl3);
             this.xtraTabPage1.Controls.Add(this.groupControl2);
@@ -313,6 +325,42 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(342, 645);
             this.xtraTabPage1.Text = "Fatura Bilgileri";
+            // 
+            // BtnTextTemizle
+            // 
+            this.BtnTextTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnTextTemizle.Appearance.Options.UseFont = true;
+            this.BtnTextTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTextTemizle.ImageOptions.Image")));
+            this.BtnTextTemizle.Location = new System.Drawing.Point(150, 430);
+            this.BtnTextTemizle.Name = "BtnTextTemizle";
+            this.BtnTextTemizle.Size = new System.Drawing.Size(142, 31);
+            this.BtnTextTemizle.TabIndex = 39;
+            this.BtnTextTemizle.Text = "TEMİZLE";
+            this.BtnTextTemizle.Click += new System.EventHandler(this.BtnTextTemizle_Click);
+            // 
+            // BtnGuncelle
+            // 
+            this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGuncelle.Appearance.Options.UseFont = true;
+            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
+            this.BtnGuncelle.Location = new System.Drawing.Point(151, 356);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(142, 31);
+            this.BtnGuncelle.TabIndex = 38;
+            this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
+            // 
+            // BtnSil
+            // 
+            this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSil.Appearance.Options.UseFont = true;
+            this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
+            this.BtnSil.Location = new System.Drawing.Point(151, 393);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(142, 31);
+            this.BtnSil.TabIndex = 37;
+            this.BtnSil.Text = "SİL";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click_1);
             // 
             // groupControl4
             // 
@@ -511,52 +559,7 @@
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.gridView1_RowStyle);
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
-            // 
-            // BtnTextTemizle
-            // 
-            this.BtnTextTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnTextTemizle.Appearance.Options.UseFont = true;
-            this.BtnTextTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTextTemizle.ImageOptions.Image")));
-            this.BtnTextTemizle.Location = new System.Drawing.Point(123, 341);
-            this.BtnTextTemizle.Name = "BtnTextTemizle";
-            this.BtnTextTemizle.Size = new System.Drawing.Size(142, 31);
-            this.BtnTextTemizle.TabIndex = 36;
-            this.BtnTextTemizle.Text = "TEMİZLE";
-            this.BtnTextTemizle.Click += new System.EventHandler(this.BtnTextTemizle_Click);
-            // 
-            // BtnGuncelle
-            // 
-            this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGuncelle.Appearance.Options.UseFont = true;
-            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(124, 267);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(142, 31);
-            this.BtnGuncelle.TabIndex = 35;
-            this.BtnGuncelle.Text = "GÜNCELLE";
-            // 
-            // BtnSil
-            // 
-            this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnSil.Appearance.Options.UseFont = true;
-            this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(124, 304);
-            this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(142, 31);
-            this.BtnSil.TabIndex = 34;
-            this.BtnSil.Text = "SİL";
-            // 
-            // BtnKaydet
-            // 
-            this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnKaydet.Appearance.Options.UseFont = true;
-            this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(124, 230);
-            this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(142, 31);
-            this.BtnKaydet.TabIndex = 33;
-            this.BtnKaydet.Text = "KAYDET";
-            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
+            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // FrmFaturalar
             // 
@@ -645,9 +648,9 @@
         private DevExpress.XtraEditors.TextEdit TxtUrunAd;
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.SimpleButton BtnKaydet;
         private DevExpress.XtraEditors.SimpleButton BtnTextTemizle;
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
         private DevExpress.XtraEditors.SimpleButton BtnSil;
-        private DevExpress.XtraEditors.SimpleButton BtnKaydet;
     }
 }

@@ -112,15 +112,65 @@ namespace Ticari_Otomasyon
             }
         }
 
-        private void BtnTextTemizle_Click(object sender, EventArgs e)
-        {
-            textTemizle();
-        }
+      
 
         private void gridView1_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
         {
             e.Appearance.BackColor = Color.MistyRose;
             e.Appearance.BackColor2 = Color.Lavender;
+        }
+
+    
+
+        private void BtnSil_Click_1(object sender, EventArgs e)
+        {
+            DialogResult cevap;
+            cevap = MessageBox.Show("Fatura Bilgilerini Silmek İstiyor Musunuz ?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (cevap == DialogResult.Yes)
+            {
+                SqlCommand komut = new SqlCommand("delete from TBL_FATURABILGI where FATURABILGIID=@p1", bgl.baglanti());
+                komut.Parameters.AddWithValue("@p1", Txtid.Text);
+                komut.ExecuteNonQuery();
+                bgl.baglanti().Close();
+                MessageBox.Show("Fatura Bilgileri Başarıyla Silindi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                listele();
+
+            }
+        }
+
+        private void BtnTextTemizle_Click(object sender, EventArgs e)
+        {
+            textTemizle();
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("update TBL_FATURABILGI set SERI=@P1,SIRANO=@P2,TARIH=@P3,SAAT=@P4,VERGIDAIRE=@P5,ALICI=@P6,TESLIMEDEN=@P7,TESLIMALAN=@P8 WHERE FATURABILGIID=@P9", bgl.baglanti());
+            komut.Parameters.AddWithValue("@P1", TxtSeri.Text);
+            komut.Parameters.AddWithValue("@P2", TxtSiraNo.Text);
+            komut.Parameters.AddWithValue("@P3", MskTarih.Text);
+            komut.Parameters.AddWithValue("@P4", MskSaat.Text);
+            komut.Parameters.AddWithValue("@P5", TxtVergiDairesi.Text);
+            komut.Parameters.AddWithValue("@P6", TxtAlici.Text);
+            komut.Parameters.AddWithValue("@P7", TxtTeden.Text);
+            komut.Parameters.AddWithValue("@P8", TxtTalan.Text);
+            komut.Parameters.AddWithValue("@P9", Txtid.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Fatura Bilgileri Başarıyla Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            listele();
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmFaturaUrunDetay fr=new FrmFaturaUrunDetay();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                fr.id = dr["FATURABILGIID"].ToString();
+            }
+            fr.Show();
         }
     }
 }
