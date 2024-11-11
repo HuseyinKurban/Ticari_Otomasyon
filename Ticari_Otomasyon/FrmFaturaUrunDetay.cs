@@ -32,5 +32,24 @@ namespace Ticari_Otomasyon
         {
           listele();
         }
+
+        private void gridView1_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
+        {
+            e.Appearance.BackColor = Color.Honeydew;
+            e.Appearance.BackColor2 = Color.SeaGreen;
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmFaturaUrunDuzenleme fr=new FrmFaturaUrunDuzenleme();
+            DataRow dr=gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr != null)
+            {
+                fr.urunid = dr["FATURAURUNID"].ToString();
+                
+               
+            }
+            fr.Show();
+        }
     }
 }
