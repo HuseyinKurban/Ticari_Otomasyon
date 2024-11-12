@@ -116,5 +116,17 @@ namespace Ticari_Otomasyon
             }
             frfatura.Focus();
         }
+
+        FrmNotlar frnotlar;
+        private void BtnNotlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(frnotlar==null)
+            {
+                frnotlar=new FrmNotlar();
+                frnotlar.MdiParent = this;
+                frnotlar.Show();
+            }
+            frnotlar.Focus();
+        }
     }
 }
