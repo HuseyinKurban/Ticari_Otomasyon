@@ -79,7 +79,7 @@
             this.BtnTextTemizle.Location = new System.Drawing.Point(106, 582);
             this.BtnTextTemizle.Name = "BtnTextTemizle";
             this.BtnTextTemizle.Size = new System.Drawing.Size(168, 31);
-            this.BtnTextTemizle.TabIndex = 28;
+            this.BtnTextTemizle.TabIndex = 13;
             this.BtnTextTemizle.Text = "TEMİZLE";
             this.BtnTextTemizle.Click += new System.EventHandler(this.BtnTextTemizle_Click);
             // 
@@ -90,7 +90,7 @@
             this.TxtMaaslar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMaaslar.Properties.Appearance.Options.UseFont = true;
             this.TxtMaaslar.Size = new System.Drawing.Size(164, 24);
-            this.TxtMaaslar.TabIndex = 25;
+            this.TxtMaaslar.TabIndex = 7;
             // 
             // labelControl11
             // 
@@ -120,7 +120,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(105, 508);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(168, 31);
-            this.BtnGuncelle.TabIndex = 20;
+            this.BtnGuncelle.TabIndex = 11;
             this.BtnGuncelle.Text = "GÜNCELLE";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -132,7 +132,7 @@
             this.BtnSil.Location = new System.Drawing.Point(105, 545);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(168, 31);
-            this.BtnSil.TabIndex = 19;
+            this.BtnSil.TabIndex = 12;
             this.BtnSil.Text = "SİL";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -144,7 +144,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(105, 471);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(168, 31);
-            this.BtnKaydet.TabIndex = 18;
+            this.BtnKaydet.TabIndex = 10;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -154,7 +154,7 @@
             this.RchTxtNotlar.Location = new System.Drawing.Point(108, 318);
             this.RchTxtNotlar.Name = "RchTxtNotlar";
             this.RchTxtNotlar.Size = new System.Drawing.Size(163, 128);
-            this.RchTxtNotlar.TabIndex = 17;
+            this.RchTxtNotlar.TabIndex = 9;
             this.RchTxtNotlar.Text = "";
             // 
             // TxtSu
@@ -164,7 +164,7 @@
             this.TxtSu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSu.Properties.Appearance.Options.UseFont = true;
             this.TxtSu.Size = new System.Drawing.Size(163, 24);
-            this.TxtSu.TabIndex = 13;
+            this.TxtSu.TabIndex = 4;
             // 
             // labelControl7
             // 
@@ -203,7 +203,7 @@
             this.TxtElektrik.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtElektrik.Properties.Appearance.Options.UseFont = true;
             this.TxtElektrik.Size = new System.Drawing.Size(164, 24);
-            this.TxtElektrik.TabIndex = 6;
+            this.TxtElektrik.TabIndex = 3;
             // 
             // labelControl3
             // 
@@ -233,7 +233,7 @@
             this.Txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Txtid.Properties.Appearance.Options.UseFont = true;
             this.Txtid.Size = new System.Drawing.Size(166, 24);
-            this.Txtid.TabIndex = 1;
+            this.Txtid.TabIndex = 14;
             // 
             // labelControl1
             // 
@@ -290,7 +290,7 @@
             "2025",
             "2026"});
             this.CmbYıl.Size = new System.Drawing.Size(166, 24);
-            this.CmbYıl.TabIndex = 35;
+            this.CmbYıl.TabIndex = 2;
             // 
             // CmbAy
             // 
@@ -314,7 +314,7 @@
             "Kasım",
             "Aralık"});
             this.CmbAy.Size = new System.Drawing.Size(166, 24);
-            this.CmbAy.TabIndex = 34;
+            this.CmbAy.TabIndex = 1;
             // 
             // TxtEkstra
             // 
@@ -323,7 +323,7 @@
             this.TxtEkstra.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtEkstra.Properties.Appearance.Options.UseFont = true;
             this.TxtEkstra.Size = new System.Drawing.Size(163, 24);
-            this.TxtEkstra.TabIndex = 33;
+            this.TxtEkstra.TabIndex = 8;
             // 
             // labelControl8
             // 
@@ -342,7 +342,7 @@
             this.Txtinternet.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Txtinternet.Properties.Appearance.Options.UseFont = true;
             this.Txtinternet.Size = new System.Drawing.Size(163, 24);
-            this.Txtinternet.TabIndex = 31;
+            this.Txtinternet.TabIndex = 6;
             // 
             // labelControl5
             // 
@@ -361,7 +361,7 @@
             this.TxtDogalgaz.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtDogalgaz.Properties.Appearance.Options.UseFont = true;
             this.TxtDogalgaz.Size = new System.Drawing.Size(163, 24);
-            this.TxtDogalgaz.TabIndex = 29;
+            this.TxtDogalgaz.TabIndex = 5;
             // 
             // gridView1
             // 

@@ -159,7 +159,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(124, 230);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(142, 31);
-            this.BtnKaydet.TabIndex = 33;
+            this.BtnKaydet.TabIndex = 16;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -191,7 +191,7 @@
             this.TxtFaturaid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtFaturaid.Properties.Appearance.Options.UseFont = true;
             this.TxtFaturaid.Size = new System.Drawing.Size(222, 24);
-            this.TxtFaturaid.TabIndex = 32;
+            this.TxtFaturaid.TabIndex = 15;
             // 
             // TxtTutar
             // 
@@ -200,7 +200,7 @@
             this.TxtTutar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtTutar.Properties.Appearance.Options.UseFont = true;
             this.TxtTutar.Size = new System.Drawing.Size(222, 24);
-            this.TxtTutar.TabIndex = 31;
+            this.TxtTutar.TabIndex = 14;
             // 
             // TxtFiyat
             // 
@@ -209,7 +209,7 @@
             this.TxtFiyat.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtFiyat.Properties.Appearance.Options.UseFont = true;
             this.TxtFiyat.Size = new System.Drawing.Size(222, 24);
-            this.TxtFiyat.TabIndex = 30;
+            this.TxtFiyat.TabIndex = 13;
             // 
             // TxtMiktar
             // 
@@ -218,7 +218,7 @@
             this.TxtMiktar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMiktar.Properties.Appearance.Options.UseFont = true;
             this.TxtMiktar.Size = new System.Drawing.Size(222, 24);
-            this.TxtMiktar.TabIndex = 29;
+            this.TxtMiktar.TabIndex = 12;
             // 
             // TxtUrunAd
             // 
@@ -227,7 +227,7 @@
             this.TxtUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtUrunAd.Properties.Appearance.Options.UseFont = true;
             this.TxtUrunAd.Size = new System.Drawing.Size(222, 24);
-            this.TxtUrunAd.TabIndex = 28;
+            this.TxtUrunAd.TabIndex = 11;
             // 
             // labelControl15
             // 
@@ -266,7 +266,7 @@
             this.TxtUrunid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtUrunid.Properties.Appearance.Options.UseFont = true;
             this.TxtUrunid.Size = new System.Drawing.Size(222, 24);
-            this.TxtUrunid.TabIndex = 25;
+            this.TxtUrunid.TabIndex = 10;
             // 
             // labelControl11
             // 
@@ -334,7 +334,7 @@
             this.BtnTextTemizle.Location = new System.Drawing.Point(150, 430);
             this.BtnTextTemizle.Name = "BtnTextTemizle";
             this.BtnTextTemizle.Size = new System.Drawing.Size(142, 31);
-            this.BtnTextTemizle.TabIndex = 39;
+            this.BtnTextTemizle.TabIndex = 19;
             this.BtnTextTemizle.Text = "TEMİZLE";
             this.BtnTextTemizle.Click += new System.EventHandler(this.BtnTextTemizle_Click);
             // 
@@ -346,7 +346,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(151, 356);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(142, 31);
-            this.BtnGuncelle.TabIndex = 38;
+            this.BtnGuncelle.TabIndex = 17;
             this.BtnGuncelle.Text = "GÜNCELLE";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -358,7 +358,7 @@
             this.BtnSil.Location = new System.Drawing.Point(151, 393);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(142, 31);
-            this.BtnSil.TabIndex = 37;
+            this.BtnSil.TabIndex = 18;
             this.BtnSil.Text = "SİL";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click_1);
             // 
@@ -384,7 +384,7 @@
             this.TxtTalan.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtTalan.Properties.Appearance.Options.UseFont = true;
             this.TxtTalan.Size = new System.Drawing.Size(192, 24);
-            this.TxtTalan.TabIndex = 28;
+            this.TxtTalan.TabIndex = 9;
             // 
             // TxtTeden
             // 
@@ -393,7 +393,7 @@
             this.TxtTeden.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtTeden.Properties.Appearance.Options.UseFont = true;
             this.TxtTeden.Size = new System.Drawing.Size(192, 24);
-            this.TxtTeden.TabIndex = 27;
+            this.TxtTeden.TabIndex = 8;
             // 
             // TxtAlici
             // 
@@ -402,7 +402,7 @@
             this.TxtAlici.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtAlici.Properties.Appearance.Options.UseFont = true;
             this.TxtAlici.Size = new System.Drawing.Size(192, 24);
-            this.TxtAlici.TabIndex = 26;
+            this.TxtAlici.TabIndex = 7;
             // 
             // labelControl4
             // 
@@ -446,7 +446,7 @@
             this.TxtVergiDairesi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtVergiDairesi.Properties.Appearance.Options.UseFont = true;
             this.TxtVergiDairesi.Size = new System.Drawing.Size(192, 24);
-            this.TxtVergiDairesi.TabIndex = 27;
+            this.TxtVergiDairesi.TabIndex = 6;
             // 
             // MskSaat
             // 
@@ -455,7 +455,7 @@
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
             this.MskSaat.Size = new System.Drawing.Size(192, 26);
-            this.MskSaat.TabIndex = 26;
+            this.MskSaat.TabIndex = 5;
             this.MskSaat.ValidatingType = typeof(System.DateTime);
             // 
             // MskTarih
@@ -465,7 +465,7 @@
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(192, 26);
-            this.MskTarih.TabIndex = 25;
+            this.MskTarih.TabIndex = 4;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // labelControl6
@@ -500,7 +500,7 @@
             this.TxtSeri.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSeri.Properties.Appearance.Options.UseFont = true;
             this.TxtSeri.Size = new System.Drawing.Size(192, 24);
-            this.TxtSeri.TabIndex = 4;
+            this.TxtSeri.TabIndex = 1;
             // 
             // Txtid
             // 
@@ -510,7 +510,7 @@
             this.Txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Txtid.Properties.Appearance.Options.UseFont = true;
             this.Txtid.Size = new System.Drawing.Size(192, 24);
-            this.Txtid.TabIndex = 1;
+            this.Txtid.TabIndex = 3;
             // 
             // labelControl2
             // 
@@ -529,7 +529,7 @@
             this.TxtSiraNo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSiraNo.Properties.Appearance.Options.UseFont = true;
             this.TxtSiraNo.Size = new System.Drawing.Size(192, 24);
-            this.TxtSiraNo.TabIndex = 6;
+            this.TxtSiraNo.TabIndex = 2;
             // 
             // labelControl3
             // 

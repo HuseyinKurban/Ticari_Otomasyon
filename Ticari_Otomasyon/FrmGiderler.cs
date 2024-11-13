@@ -21,7 +21,7 @@ namespace Ticari_Otomasyon
         void listele()
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("select * from TBL_GIDERLER",bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("select * from TBL_GIDERLER order by  ID desc", bgl.baglanti());
             da.Fill(dt);
             gridControl1.DataSource = dt;
             textTemizle();

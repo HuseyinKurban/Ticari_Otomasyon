@@ -21,7 +21,7 @@ namespace Ticari_Otomasyon
         private void BtnUrunler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
           
-            if (frurun == null)//fr nesnesi tanımlanmamıssa yeniden açsın  yani ard arda açmasın
+            if (frurun == null || frurun.IsDisposed)//fr nesnesi tanımlanmamıssa yeniden açsın  yani ard arda açmasın ve kapalıysa acsın
             {
                 frurun = new FrmUrunler();
                 //bu urunler formunu ana formdaki parentte ekleyip aç
@@ -36,7 +36,7 @@ namespace Ticari_Otomasyon
         private void BtnMusteriler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
            
-            if (frmusteri == null)
+            if (frmusteri == null || frmusteri.IsDisposed)
             {
                 frmusteri = new FrmMusteriler();
                 frmusteri.MdiParent = this;
@@ -48,7 +48,7 @@ namespace Ticari_Otomasyon
         FrmFirmalar frfirma;
         private void BtnFirmalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(frfirma==null)
+            if(frfirma==null || frfirma.IsDisposed)
             {
                 frfirma=new FrmFirmalar();
                 frfirma.MdiParent = this;
@@ -61,7 +61,7 @@ namespace Ticari_Otomasyon
         FrmPersoneller frpersonel;
         private void BtnPersoneller_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(frpersonel==null)
+            if(frpersonel==null || frpersonel.IsDisposed)
             {
                 frpersonel=new FrmPersoneller();
                 frpersonel.MdiParent = this;
@@ -73,7 +73,7 @@ namespace Ticari_Otomasyon
         FrmRehber frrehber;
         private void BtnRehber_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (frrehber==null)
+            if (frrehber==null || frrehber.IsDisposed)
             {
                 frrehber=new FrmRehber();
                 frrehber.MdiParent = this;
@@ -85,7 +85,7 @@ namespace Ticari_Otomasyon
         FrmGiderler frgider;
         private void BtnGiderler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(frgider==null)
+            if(frgider==null || frgider.IsDisposed)
             {
                 frgider=new FrmGiderler();
                 frgider.MdiParent = this;
@@ -96,7 +96,7 @@ namespace Ticari_Otomasyon
         FrmBankalar frbanka;
         private void BtnBankalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(frbanka==null)
+            if(frbanka==null || frbanka.IsDisposed) 
             {
                 frbanka=new FrmBankalar();
                 frbanka.MdiParent = this;
@@ -108,7 +108,7 @@ namespace Ticari_Otomasyon
         private void BtnFaturalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
           
-            if (frfatura == null)
+            if (frfatura == null || frfatura.IsDisposed)
             {
                 frfatura = new FrmFaturalar();
                 frfatura.MdiParent = this;
@@ -120,13 +120,24 @@ namespace Ticari_Otomasyon
         FrmNotlar frnotlar;
         private void BtnNotlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if(frnotlar==null)
+            if(frnotlar==null || frnotlar.IsDisposed)
             {
                 frnotlar=new FrmNotlar();
                 frnotlar.MdiParent = this;
                 frnotlar.Show();
             }
             frnotlar.Focus();
+        }
+        FrmHareketler frhareketler;
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frhareketler == null || frhareketler.IsDisposed)
+            {
+                frhareketler = new FrmHareketler();
+                frhareketler.MdiParent = this;
+                frhareketler.Show();
+            }
+            frhareketler.Focus();
         }
     }
 }
