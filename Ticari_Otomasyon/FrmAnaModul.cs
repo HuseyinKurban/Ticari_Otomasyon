@@ -139,5 +139,16 @@ namespace Ticari_Otomasyon
             }
             frhareketler.Focus();
         }
+        FrmRaporlar fraporlar;
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (fraporlar == null || fraporlar.IsDisposed)
+            {
+                fraporlar = new FrmRaporlar();
+                fraporlar.MdiParent = this;
+                fraporlar.Show();
+            }
+            fraporlar.Focus();
+        }
     }
 }
