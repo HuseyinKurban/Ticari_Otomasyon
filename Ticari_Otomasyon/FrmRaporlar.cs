@@ -19,12 +19,23 @@ namespace Ticari_Otomasyon
 
         private void FrmRaporlar_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'DboTicariOtomasyonDataSet1.TBL_MUSTERILER' table. You can move, or remove it, as needed.
-            this.TBL_MUSTERILERTableAdapter.Fill(this.DboTicariOtomasyonDataSet1.TBL_MUSTERILER);
-            // TODO: This line of code loads data into the 'DboTicariOtomasyonDataSet.TBL_FIRMALAR' table. You can move, or remove it, as needed.
-            this.TBL_FIRMALARTableAdapter.Fill(this.DboTicariOtomasyonDataSet.TBL_FIRMALAR);
+            // TODO: This line of code loads data into the 'DboTicariOtomasyonDataSet3.TBL_PERSONELLER' table. You can move, or remove it, as needed.
+            this.TBL_PERSONELLERTableAdapter.Fill(this.DboTicariOtomasyonDataSet3.TBL_PERSONELLER);
+            // TODO: This line of code loads data into the 'DboTicariOtomasyonDataSet2.TBL_GIDERLER' table. You can move, or remove it, as needed.
+            this.TBL_GIDERLERTableAdapter.Fill(this.DboTicariOtomasyonDataSet2.TBL_GIDERLER);
 
+
+            // TODO: Bu kod satırı, 'DboTicariOtomasyonDataSet1.TBL_FIRMALAR' tablosuna veri yükler. İhtiyaca göre bu satırı taşıyabilir veya kaldırabilirsiniz.
+            this.TBL_FIRMALARTableAdapter.Fill(this.DboTicariOtomasyonDataSet1.TBL_FIRMALAR);
+
+            // TODO: Bu kod satırı, 'DboTicariOtomasyonDataSet.TBL_MUSTERILER' tablosuna veri yükler. İhtiyaca göre bu satırı taşıyabilir veya kaldırabilirsiniz.
+            this.TBL_MUSTERILERTableAdapter.Fill(this.DboTicariOtomasyonDataSet.TBL_MUSTERILER);
+
+            // Raporları günceller.
             this.reportViewer1.RefreshReport();
+            this.reportViewer2.RefreshReport();
+            this.reportViewer3.RefreshReport();
+            this.reportViewer4.RefreshReport();
         }
     }
 }

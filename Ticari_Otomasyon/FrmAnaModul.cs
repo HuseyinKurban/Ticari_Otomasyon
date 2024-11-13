@@ -128,6 +128,7 @@ namespace Ticari_Otomasyon
             }
             frnotlar.Focus();
         }
+
         FrmHareketler frhareketler;
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -139,6 +140,7 @@ namespace Ticari_Otomasyon
             }
             frhareketler.Focus();
         }
+
         FrmRaporlar fraporlar;
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -149,6 +151,18 @@ namespace Ticari_Otomasyon
                 fraporlar.Show();
             }
             fraporlar.Focus();
+        }
+
+        FrmStoklar frstoklar;
+        private void BtnStoklar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frstoklar == null || frstoklar.IsDisposed)
+            {
+                frstoklar = new FrmStoklar();
+                frstoklar.MdiParent = this;
+                frstoklar.Show();
+            }
+            frstoklar.Focus();
         }
     }
 }

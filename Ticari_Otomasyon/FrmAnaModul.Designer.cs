@@ -104,6 +104,7 @@
             this.BtnStoklar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnStoklar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnStoklar.Name = "BtnStoklar";
+            this.BtnStoklar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnStoklar_ItemClick);
             // 
             // BtnMusteriler
             // 
