@@ -18,6 +18,7 @@ namespace Ticari_Otomasyon
         }
         public string kullanici;
         FrmUrunler frurun;
+
         private void BtnUrunler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
           
@@ -30,6 +31,17 @@ namespace Ticari_Otomasyon
                 
             }
             frurun.Focus();
+        }
+
+        private void FrmAnaModul_Load(object sender, EventArgs e)
+        {
+            if (franasayfa == null || franasayfa.IsDisposed)
+            {
+                franasayfa = new FrmAnaSayfa();
+                franasayfa.MdiParent = this;
+                franasayfa.Show();
+            }
+            franasayfa.Focus();
         }
 
         FrmMusteriler frmusteri;
@@ -189,8 +201,19 @@ namespace Ticari_Otomasyon
             }
             frkasa.Focus();
         }
+
+        FrmAnaSayfa franasayfa;
+        private void BtnAnaSayfa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (franasayfa == null || franasayfa.IsDisposed)
+            {
+                franasayfa = new FrmAnaSayfa();
+                franasayfa.MdiParent = this;
+                franasayfa.Show();
+            }
+            franasayfa.Focus();
+        }
+
     
-      
-        
     }
 }

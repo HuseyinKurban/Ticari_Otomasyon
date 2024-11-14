@@ -134,6 +134,7 @@
             this.BtnAnaSayfa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnAnaSayfa.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnAnaSayfa.Name = "BtnAnaSayfa";
+            this.BtnAnaSayfa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAnaSayfa_ItemClick);
             // 
             // BtnPersoneller
             // 
@@ -287,6 +288,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1902, 999);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
@@ -295,7 +297,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TİCARİ OTOMASYON";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-//            this.Load += new System.EventHandler(this.FrmAnaModul_Load);
+            this.Load += new System.EventHandler(this.FrmAnaModul_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
