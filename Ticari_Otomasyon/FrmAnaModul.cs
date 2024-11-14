@@ -16,7 +16,7 @@ namespace Ticari_Otomasyon
         {
             InitializeComponent();
         }
-
+        public string kullanici;
         FrmUrunler frurun;
         private void BtnUrunler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -164,5 +164,33 @@ namespace Ticari_Otomasyon
             }
             frstoklar.Focus();
         }
+
+        FrmAyarlar frayarlar;
+        private void BtnAyarlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frayarlar == null || frayarlar.IsDisposed)
+            {
+                frayarlar = new FrmAyarlar();
+                frayarlar.MdiParent = this;
+                frayarlar.Show();
+            }
+            frayarlar.Focus();
+        }
+
+        FrmKasa frkasa;
+        private void BtnKasa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frkasa == null || frkasa.IsDisposed)
+            {
+                frkasa = new FrmKasa();
+                frkasa.ad = kullanici;
+                frkasa.MdiParent = this;
+                frkasa.Show();
+            }
+            frkasa.Focus();
+        }
+    
+      
+        
     }
 }

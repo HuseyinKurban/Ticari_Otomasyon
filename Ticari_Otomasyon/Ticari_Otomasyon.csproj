@@ -117,6 +117,12 @@
     <Compile Include="FrmAnaModul.Designer.cs">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAyarlar.Designer.cs">
+      <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBankalar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,12 @@
     </Compile>
     <Compile Include="FrmHareketler.Designer.cs">
       <DependentUpon>FrmHareketler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKasa.Designer.cs">
+      <DependentUpon>FrmKasa.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMail.cs">
       <SubType>Form</SubType>
@@ -223,6 +235,9 @@
     <EmbeddedResource Include="FrmAnaModul.resx">
       <DependentUpon>FrmAnaModul.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAyarlar.resx">
+      <DependentUpon>FrmAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBankalar.resx">
       <DependentUpon>FrmBankalar.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHareketler.resx">
       <DependentUpon>FrmHareketler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKasa.resx">
+      <DependentUpon>FrmKasa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMail.resx">
       <DependentUpon>FrmMail.cs</DependentUpon>

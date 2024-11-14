@@ -163,6 +163,7 @@
             this.BtnKasa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKasa.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnKasa.Name = "BtnKasa";
+            this.BtnKasa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnKasa_ItemClick);
             // 
             // BtnNotlar
             // 
@@ -224,6 +225,7 @@
             this.BtnAyarlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnAyarlar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnAyarlar.Name = "BtnAyarlar";
+            this.BtnAyarlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAyarlar_ItemClick);
             // 
             // barButtonItem16
             // 
@@ -293,6 +295,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TİCARİ OTOMASYON";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+//            this.Load += new System.EventHandler(this.FrmAnaModul_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
