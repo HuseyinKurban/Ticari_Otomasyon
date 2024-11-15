@@ -36,6 +36,13 @@
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.RchNotlar = new System.Windows.Forms.RichTextBox();
+            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtFirma = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.TxtPersonel = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.BtnBul = new DevExpress.XtraEditors.SimpleButton();
             this.TxtFaturaid = new DevExpress.XtraEditors.TextEdit();
             this.TxtTutar = new DevExpress.XtraEditors.TextEdit();
             this.TxtFiyat = new DevExpress.XtraEditors.TextEdit();
@@ -65,6 +72,8 @@
             this.MskTarih = new System.Windows.Forms.MaskedTextBox();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.TxtSeri = new DevExpress.XtraEditors.TextEdit();
             this.Txtid = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -75,6 +84,8 @@
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFirma.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPersonel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtFaturaid.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtTutar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtFiyat.Properties)).BeginInit();
@@ -156,7 +167,7 @@
             this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKaydet.Appearance.Options.UseFont = true;
             this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(124, 230);
+            this.BtnKaydet.Location = new System.Drawing.Point(109, 435);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(142, 31);
             this.BtnKaydet.TabIndex = 16;
@@ -165,6 +176,13 @@
             // 
             // groupControl5
             // 
+            this.groupControl5.Controls.Add(this.RchNotlar);
+            this.groupControl5.Controls.Add(this.labelControl18);
+            this.groupControl5.Controls.Add(this.TxtFirma);
+            this.groupControl5.Controls.Add(this.labelControl17);
+            this.groupControl5.Controls.Add(this.TxtPersonel);
+            this.groupControl5.Controls.Add(this.labelControl16);
+            this.groupControl5.Controls.Add(this.BtnBul);
             this.groupControl5.Controls.Add(this.TxtFaturaid);
             this.groupControl5.Controls.Add(this.TxtTutar);
             this.groupControl5.Controls.Add(this.TxtFiyat);
@@ -180,13 +198,82 @@
             this.groupControl5.Location = new System.Drawing.Point(3, 3);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.ShowCaption = false;
-            this.groupControl5.Size = new System.Drawing.Size(333, 198);
+            this.groupControl5.Size = new System.Drawing.Size(333, 393);
             this.groupControl5.TabIndex = 0;
             this.groupControl5.Text = "groupControl5";
             // 
+            // RchNotlar
+            // 
+            this.RchNotlar.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.RchNotlar.Location = new System.Drawing.Point(2, 280);
+            this.RchNotlar.Name = "RchNotlar";
+            this.RchNotlar.Size = new System.Drawing.Size(326, 108);
+            this.RchNotlar.TabIndex = 34;
+            this.RchNotlar.Text = "";
+            // 
+            // labelControl18
+            // 
+            this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl18.Appearance.Options.UseFont = true;
+            this.labelControl18.Location = new System.Drawing.Point(6, 256);
+            this.labelControl18.Name = "labelControl18";
+            this.labelControl18.Size = new System.Drawing.Size(72, 18);
+            this.labelControl18.TabIndex = 33;
+            this.labelControl18.Text = "NOTLAR :";
+            // 
+            // TxtFirma
+            // 
+            this.TxtFirma.Location = new System.Drawing.Point(106, 190);
+            this.TxtFirma.Name = "TxtFirma";
+            this.TxtFirma.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtFirma.Properties.Appearance.Options.UseFont = true;
+            this.TxtFirma.Size = new System.Drawing.Size(222, 24);
+            this.TxtFirma.TabIndex = 30;
+            // 
+            // labelControl17
+            // 
+            this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl17.Appearance.Options.UseFont = true;
+            this.labelControl17.Location = new System.Drawing.Point(38, 196);
+            this.labelControl17.Name = "labelControl17";
+            this.labelControl17.Size = new System.Drawing.Size(59, 18);
+            this.labelControl17.TabIndex = 31;
+            this.labelControl17.Text = "FİRMA :";
+            // 
+            // TxtPersonel
+            // 
+            this.TxtPersonel.Location = new System.Drawing.Point(106, 160);
+            this.TxtPersonel.Name = "TxtPersonel";
+            this.TxtPersonel.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TxtPersonel.Properties.Appearance.Options.UseFont = true;
+            this.TxtPersonel.Size = new System.Drawing.Size(222, 24);
+            this.TxtPersonel.TabIndex = 28;
+            // 
+            // labelControl16
+            // 
+            this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl16.Appearance.Options.UseFont = true;
+            this.labelControl16.Location = new System.Drawing.Point(6, 166);
+            this.labelControl16.Name = "labelControl16";
+            this.labelControl16.Size = new System.Drawing.Size(91, 18);
+            this.labelControl16.TabIndex = 29;
+            this.labelControl16.Text = "PERSONEL :";
+            // 
+            // BtnBul
+            // 
+            this.BtnBul.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnBul.Appearance.Options.UseFont = true;
+            this.BtnBul.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnBul.ImageOptions.Image")));
+            this.BtnBul.Location = new System.Drawing.Point(224, 11);
+            this.BtnBul.Name = "BtnBul";
+            this.BtnBul.Size = new System.Drawing.Size(58, 24);
+            this.BtnBul.TabIndex = 17;
+            this.BtnBul.Text = "BUL";
+            this.BtnBul.Click += new System.EventHandler(this.BtnBul_Click);
+            // 
             // TxtFaturaid
             // 
-            this.TxtFaturaid.Location = new System.Drawing.Point(106, 160);
+            this.TxtFaturaid.Location = new System.Drawing.Point(106, 220);
             this.TxtFaturaid.Name = "TxtFaturaid";
             this.TxtFaturaid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtFaturaid.Properties.Appearance.Options.UseFont = true;
@@ -233,7 +320,7 @@
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Location = new System.Drawing.Point(9, 166);
+            this.labelControl15.Location = new System.Drawing.Point(6, 226);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(91, 18);
             this.labelControl15.TabIndex = 27;
@@ -243,7 +330,7 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(41, 136);
+            this.labelControl7.Location = new System.Drawing.Point(38, 136);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(59, 18);
             this.labelControl7.TabIndex = 26;
@@ -253,7 +340,7 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(45, 106);
+            this.labelControl10.Location = new System.Drawing.Point(42, 106);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(55, 18);
             this.labelControl10.TabIndex = 21;
@@ -265,14 +352,14 @@
             this.TxtUrunid.Name = "TxtUrunid";
             this.TxtUrunid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtUrunid.Properties.Appearance.Options.UseFont = true;
-            this.TxtUrunid.Size = new System.Drawing.Size(222, 24);
+            this.TxtUrunid.Size = new System.Drawing.Size(112, 24);
             this.TxtUrunid.TabIndex = 10;
             // 
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(31, 76);
+            this.labelControl11.Location = new System.Drawing.Point(28, 76);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(69, 18);
             this.labelControl11.TabIndex = 22;
@@ -282,7 +369,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(24, 16);
+            this.labelControl8.Location = new System.Drawing.Point(21, 16);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(76, 18);
             this.labelControl8.TabIndex = 14;
@@ -292,7 +379,7 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(21, 43);
+            this.labelControl9.Location = new System.Drawing.Point(18, 43);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(79, 18);
             this.labelControl9.TabIndex = 16;
@@ -331,7 +418,7 @@
             this.BtnTextTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnTextTemizle.Appearance.Options.UseFont = true;
             this.BtnTextTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnTextTemizle.ImageOptions.Image")));
-            this.BtnTextTemizle.Location = new System.Drawing.Point(150, 430);
+            this.BtnTextTemizle.Location = new System.Drawing.Point(156, 476);
             this.BtnTextTemizle.Name = "BtnTextTemizle";
             this.BtnTextTemizle.Size = new System.Drawing.Size(142, 31);
             this.BtnTextTemizle.TabIndex = 19;
@@ -343,7 +430,7 @@
             this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGuncelle.Appearance.Options.UseFont = true;
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(151, 356);
+            this.BtnGuncelle.Location = new System.Drawing.Point(157, 402);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(142, 31);
             this.BtnGuncelle.TabIndex = 17;
@@ -355,7 +442,7 @@
             this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnSil.Appearance.Options.UseFont = true;
             this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-            this.BtnSil.Location = new System.Drawing.Point(151, 393);
+            this.BtnSil.Location = new System.Drawing.Point(157, 439);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(142, 31);
             this.BtnSil.TabIndex = 18;
@@ -370,7 +457,7 @@
             this.groupControl4.Controls.Add(this.labelControl14);
             this.groupControl4.Controls.Add(this.labelControl4);
             this.groupControl4.Controls.Add(this.labelControl5);
-            this.groupControl4.Location = new System.Drawing.Point(6, 218);
+            this.groupControl4.Location = new System.Drawing.Point(7, 254);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.ShowCaption = false;
             this.groupControl4.Size = new System.Drawing.Size(332, 110);
@@ -432,7 +519,7 @@
             this.groupControl3.Controls.Add(this.labelControl13);
             this.groupControl3.Controls.Add(this.labelControl12);
             this.groupControl3.Controls.Add(this.labelControl6);
-            this.groupControl3.Location = new System.Drawing.Point(6, 108);
+            this.groupControl3.Location = new System.Drawing.Point(7, 144);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.ShowCaption = false;
             this.groupControl3.Size = new System.Drawing.Size(332, 104);
@@ -480,6 +567,8 @@
             // 
             // groupControl2
             // 
+            this.groupControl2.Controls.Add(this.labelControl19);
+            this.groupControl2.Controls.Add(this.comboBox1);
             this.groupControl2.Controls.Add(this.TxtSeri);
             this.groupControl2.Controls.Add(this.labelControl1);
             this.groupControl2.Controls.Add(this.Txtid);
@@ -489,9 +578,32 @@
             this.groupControl2.Location = new System.Drawing.Point(5, 3);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.ShowCaption = false;
-            this.groupControl2.Size = new System.Drawing.Size(333, 99);
+            this.groupControl2.Size = new System.Drawing.Size(333, 135);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "groupControl2";
+            // 
+            // labelControl19
+            // 
+            this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl19.Appearance.Options.UseFont = true;
+            this.labelControl19.Location = new System.Drawing.Point(35, 99);
+            this.labelControl19.Name = "labelControl19";
+            this.labelControl19.Size = new System.Drawing.Size(93, 18);
+            this.labelControl19.TabIndex = 21;
+            this.labelControl19.Text = "CARİ TÜRÜ :";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Müşteri",
+            "Firma"});
+            this.comboBox1.Location = new System.Drawing.Point(134, 96);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(192, 26);
+            this.comboBox1.TabIndex = 20;
             // 
             // TxtSeri
             // 
@@ -576,6 +688,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
             this.groupControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFirma.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPersonel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtFaturaid.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtTutar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtFiyat.Properties)).EndInit();
@@ -652,5 +766,14 @@
         private DevExpress.XtraEditors.SimpleButton BtnTextTemizle;
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
         private DevExpress.XtraEditors.SimpleButton BtnSil;
+        private DevExpress.XtraEditors.SimpleButton BtnBul;
+        private DevExpress.XtraEditors.TextEdit TxtFirma;
+        private DevExpress.XtraEditors.LabelControl labelControl17;
+        private DevExpress.XtraEditors.TextEdit TxtPersonel;
+        private DevExpress.XtraEditors.LabelControl labelControl16;
+        private System.Windows.Forms.RichTextBox RchNotlar;
+        private DevExpress.XtraEditors.LabelControl labelControl18;
+        private DevExpress.XtraEditors.LabelControl labelControl19;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

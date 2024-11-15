@@ -59,7 +59,7 @@ namespace Ticari_Otomasyon
             SqlDataReader dr1 = komut1.ExecuteReader();
             while (dr1.Read())
             {
-                LblKasaToplam.Text = dr1[0] + " ₺";
+                LblKasaToplam.Text = Convert.ToInt32(dr1[0]).ToString("N0") + " ₺";
             }
             bgl.baglanti().Close();
 
@@ -68,7 +68,7 @@ namespace Ticari_Otomasyon
             SqlDataReader dr2= komut2.ExecuteReader();
             while(dr2.Read())
             {
-                LblYapilanOdemeler.Text=dr2[0] + " ₺";
+                LblYapilanOdemeler.Text = Convert.ToInt32(dr2[0]).ToString("N0") + " ₺";
             }
             bgl.baglanti().Close();
 
@@ -77,7 +77,7 @@ namespace Ticari_Otomasyon
             SqlDataReader dr3 = komut3.ExecuteReader();
             while(dr3.Read())
             {
-                LblPersonelMaaslari.Text=dr3[0] + " ₺";
+                LblPersonelMaaslari.Text= Convert.ToInt32(dr3[0]).ToString("N0") + " ₺";
             }
             bgl.baglanti().Close();
 
@@ -132,7 +132,8 @@ namespace Ticari_Otomasyon
             SqlDataReader dr9 = komut9.ExecuteReader();
             while (dr9.Read())
             {
-                LblStokSayisi.Text = dr9[0] + " Adet";
+                LblStokSayisi.Text = Convert.ToInt32(dr9[0]).ToString("N0") + " Adet";
+
             }
             bgl.baglanti().Close();
 

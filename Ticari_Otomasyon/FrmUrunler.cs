@@ -41,6 +41,7 @@ namespace Ticari_Otomasyon
         }
         private void FrmUrunler_Load(object sender, EventArgs e)
         {
+
             listele();
             textTemizle();
         }
@@ -66,7 +67,7 @@ namespace Ticari_Otomasyon
         private void BtnSil_Click(object sender, EventArgs e)
         {
             DialogResult cevap;
-            cevap = MessageBox.Show(TxtAd.Text+" Adlı Ürünü Silmek İstiyor Musunuz ?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            cevap = MessageBox.Show(TxtAd.Text + " Adlı Ürünü Silmek İstiyor Musunuz ?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             //id değerine göre silme
             if (cevap == DialogResult.Yes)
             {
@@ -78,24 +79,29 @@ namespace Ticari_Otomasyon
                 listele();
                 textTemizle();
             }
-           
+
         }
         //imlecin satır odağı değiştiği zaman
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             //data row=veri satırı 
             //GetDataRow=get almak, data veri ,row satır = satırın verisini al
-           
+
+
             DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
-            Txtid.Text=dr["ID"].ToString();
+            Txtid.Text = dr["ID"].ToString();
             TxtAd.Text = dr["URUNAD"].ToString();
             TxtMarka.Text = dr["MARKA"].ToString();
             TxtModel.Text = dr["MODEL"].ToString();
             MskTxtYil.Text = dr["YIL"].ToString();
+            NudAdet.Maximum = int.Parse(dr["ADET"].ToString());
             NudAdet.Value = int.Parse(dr["ADET"].ToString());
             TxtAlisFiyat.Text = dr["ALISFIYAT"].ToString();
             TxtSatisFiyat.Text = dr["SATISFIYAT"].ToString();
             RchTxtDetay.Text = dr["DETAY"].ToString();
+
+
+
 
         }
 

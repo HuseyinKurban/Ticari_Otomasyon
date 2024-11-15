@@ -235,6 +235,11 @@
             // 
             this.NudAdet.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.NudAdet.Location = new System.Drawing.Point(118, 198);
+            this.NudAdet.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.NudAdet.Name = "NudAdet";
             this.NudAdet.Size = new System.Drawing.Size(154, 26);
             this.NudAdet.TabIndex = 5;

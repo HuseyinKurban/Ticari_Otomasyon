@@ -39,26 +39,36 @@ namespace Ticari_Otomasyon
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
             {
-                chartControl1.Series["Ürünler"].Points.AddPoint(Convert.ToString(dr[0]),int.Parse( dr[1].ToString()));
+                chartControl1.Series["Ürünler"].Points.AddPoint(Convert.ToString(dr[0]), int.Parse(dr[1].ToString()));
             }
             bgl.baglanti().Close();
 
             //charta firma şehir sayısı çekme
-            SqlCommand komut2=new SqlCommand("Select IL,COUNT(*) from TBL_FIRMALAR group by IL",bgl.baglanti());
+            SqlCommand komut2 = new SqlCommand("Select IL,COUNT(*) from TBL_FIRMALAR group by IL", bgl.baglanti());
             SqlDataReader dr2 = komut2.ExecuteReader();
-            while(dr2.Read())
+            while (dr2.Read())
             {
                 chartControl2.Series["Series 1"].Points.AddPoint(Convert.ToString(dr2[0]), int.Parse(dr2[1].ToString()));
             }
             bgl.baglanti().Close();
         }
-        
+
         private void gridView1_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
         {
             e.Appearance.BackColor = Color.WhiteSmoke;
             e.Appearance.BackColor2 = Color.PowderBlue;
         }
 
-      
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmStokDetay fr = new FrmStokDetay();
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+
+            if (dr != null)
+            {
+                fr.ad = dr["Urunad"].ToString();
+            }
+            fr.Show();
+        }
     }
 }

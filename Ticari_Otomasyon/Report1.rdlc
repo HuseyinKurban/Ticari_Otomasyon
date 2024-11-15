@@ -6,37 +6,37 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.25106cm</Width>
+              <Width>2.27273cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -835,7 +835,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>ADRES</rd:DefaultName>
@@ -917,7 +919,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Height>1.2cm</Height>
-        <Width>46.76166cm</Width>
+        <Width>25cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -925,14 +927,14 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2.20833in</Height>
+    <Height>2in</Height>
     <Style>
       <Border>
         <Style>None</Style>
       </Border>
     </Style>
   </Body>
-  <Width>18.43094in</Width>
+  <Width>9.84252in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
