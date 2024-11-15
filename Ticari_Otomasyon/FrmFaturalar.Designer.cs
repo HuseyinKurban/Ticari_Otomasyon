@@ -81,6 +81,7 @@
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.BtnFaturaBilgi = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
@@ -402,6 +403,7 @@
             this.xtraTabPage1.Appearance.PageClient.BackColor = System.Drawing.Color.Firebrick;
             this.xtraTabPage1.Appearance.PageClient.Options.UseBackColor = true;
             this.xtraTabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.xtraTabPage1.Controls.Add(this.BtnFaturaBilgi);
             this.xtraTabPage1.Controls.Add(this.BtnTextTemizle);
             this.xtraTabPage1.Controls.Add(this.BtnGuncelle);
             this.xtraTabPage1.Controls.Add(this.BtnSil);
@@ -673,6 +675,18 @@
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
+            // BtnFaturaBilgi
+            // 
+            this.BtnFaturaBilgi.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnFaturaBilgi.Appearance.Options.UseFont = true;
+            this.BtnFaturaBilgi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnFaturaBilgi.Location = new System.Drawing.Point(156, 513);
+            this.BtnFaturaBilgi.Name = "BtnFaturaBilgi";
+            this.BtnFaturaBilgi.Size = new System.Drawing.Size(142, 31);
+            this.BtnFaturaBilgi.TabIndex = 20;
+            this.BtnFaturaBilgi.Text = "BİLGİ";
+            this.BtnFaturaBilgi.Click += new System.EventHandler(this.BtnFaturaBilgi_Click);
+            // 
             // FrmFaturalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -775,5 +789,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl18;
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private System.Windows.Forms.ComboBox comboBox1;
+        private DevExpress.XtraEditors.SimpleButton BtnFaturaBilgi;
     }
 }

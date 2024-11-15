@@ -85,7 +85,7 @@
             // 
             this.BtnGirisYap.Appearance.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.BtnGirisYap.Appearance.Options.UseFont = true;
-            this.BtnGirisYap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnGirisYap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGirisYap.ImageOptions.Image")));
             this.BtnGirisYap.Location = new System.Drawing.Point(589, 290);
             this.BtnGirisYap.Name = "BtnGirisYap";
             this.BtnGirisYap.Size = new System.Drawing.Size(171, 38);
@@ -95,6 +95,7 @@
             // 
             // FrmAdmin
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

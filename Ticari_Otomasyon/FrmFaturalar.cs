@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraReports.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -270,6 +271,13 @@ namespace Ticari_Otomasyon
         private void BtnFaturaKaydet_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnFaturaBilgi_Click(object sender, EventArgs e)
+        {
+            XtraReport1 report= new XtraReport1();
+            ReportPrintTool printTool = new ReportPrintTool(report);
+            printTool.ShowPreviewDialog();
         }
     }
 }

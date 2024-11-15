@@ -24,6 +24,7 @@ namespace Ticari_Otomasyon
 
         void AzalanStok()
         {
+           
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter("select URUNAD, Sum(Adet) as 'Adet' from TBL_URUNLER group by URUNAD having sum(adet)<=3000 order by SUM(Adet)", bgl.baglanti());
             da.Fill(dt);
